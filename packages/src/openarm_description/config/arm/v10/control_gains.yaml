@@ -1,0 +1,117 @@
+# # Copyright 2026 Enactic, Inc.
+# #
+# # Licensed under the Apache License, Version 2.0 (the "License");
+# # you may not use this file except in compliance with the License.
+# # You may obtain a copy of the License at
+# #
+# #     http://www.apache.org/licenses/LICENSE-2.0
+# #
+# # Unless required by applicable law or agreed to in writing, software
+# # distributed under the License is distributed on an "AS IS" BASIS,
+# # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# # See the License for the specific language governing permissions and
+# # limitations under the License.
+
+# joint1:
+#   kp: 70.0
+#   kd: 2.75
+
+# joint2:
+#   kp: 70.0
+#   kd: 2.5
+
+# joint3:
+#   kp: 70.0
+#   kd: 2.0
+
+# joint4:
+#   kp: 60.0
+#   kd: 2.0
+
+# joint5:
+#   kp: 10.0
+#   kd: 0.7
+
+# joint6:
+#   kp: 10.0
+#   kd: 0.6
+
+# joint7:
+#   kp: 10.0
+#   kd: 0.5
+
+# ===============================================================================
+
+
+# Copyright 2025 Enactic, Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# MIT-mode control gains for OpenArm V10.
+# These are baked into the URDF at launch time via xacro and become the
+# Kp/Kd written on every CAN frame inside v10_simple_hardware.cpp::write().
+#
+
+
+
+# Arm joint gains are UNCHANGED.
+#
+# Gripper ("hand") gains are LOWERED so the fingers settle against whatever
+# object stops them, instead of fighting toward position=0 with full force.
+# The resulting hold torque on a stalled gripper is roughly:
+#     tau_motor ~= Kp * (motor_des - motor_actual)
+# With the joint->motor map motor_rad = (joint / 0.044) * -1.0472, a finger
+# stalled mid-travel sees ~0.3-0.6 rad of motor error. At the old Kp=5.0
+# that's 1.5-3 Nm of continuous squeeze — enough to damage the linkage.
+# At Kp=1.0 it's ~0.3-0.6 Nm: firm enough to hold a 75 mm cube, gentle
+# enough not to break anything.
+
+# Joints 1-2 Kp bumped 70 → 90; Kd raised by sqrt(90/70) ≈ 1.13× to keep
+# the damping ratio roughly constant. Kills the spring-back on grip release
+# reported during teleop. If still soft, try Kp=110 / Kd=3.4&3.1. If it
+# starts buzzing, back off to Kp=80 / Kd=3.0&2.7.
+joint1:
+  kp: 90.0
+  kd: 3.1
+
+joint2:
+  kp: 90.0
+  kd: 2.8
+
+joint3:
+  kp: 70.0
+  kd: 2.0
+
+joint4:
+  kp: 60.0
+  kd: 2.0
+
+joint5:
+  kp: 10.0
+  kd: 0.7
+
+joint6:
+  kp: 10.0
+  kd: 0.6
+
+joint7:
+  kp: 10.0
+  kd: 0.5
+
+# ---- Gripper / hand ----
+# Was: kp: 5.0, kd: 0.1   (too stiff — crushes objects, breaks linkage)
+# Now: kp: 1.0, kd: 0.1   (compliant grasp; tune Kp up if cube slips,
+#                          down if you feel the fingers protest)
+hand:
+  kp: 1.0
+  kd: 0.1

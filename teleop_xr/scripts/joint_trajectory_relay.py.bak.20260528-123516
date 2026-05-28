@@ -1,0 +1,225 @@
+#!/usr/bin/env python3
+"""
+FIXED: Relay /joint_trajectory -> left/right trajectory controllers + gripper action servers
+
+TeleopXR publishes: /joint_trajectory with 16 joints (7L arm + 7R arm + 2 grippers)
+
+This relay:
+1. Splits trajectories: 7 left arm → /left_joint_trajectory_controller/joint_trajectory
+2. Splits trajectories: 7 right arm → /right_joint_trajectory_controller/joint_trajectory
+3. **FORWARDS GRIPPERS**: gripper positions → /left_gripper_controller/gripper_cmd (action)
+4. **FORWARDS GRIPPERS**: gripper positions → /right_gripper_controller/gripper_cmd (action)
+
+Run with:
+  source /opt/ros/jazzy/setup.bash
+  source /home/air-lab-ncsu/OPEN_ARM/packages/install/setup.bash
+  python3 scripts/joint_trajectory_relay_FIXED.py
+"""
+
+import rclpy
+from rclpy.node import Node
+from rclpy.action import ActionClient
+from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
+from control_msgs.action import GripperCommand
+
+
+class JointTrajectoryRelay(Node):
+    def __init__(self):
+        super().__init__("joint_trajectory_relay")
+
+        # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        # ARM TRAJECTORY PUBLISHERS
+        # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        self.left_traj_pub = self.create_publisher(
+            JointTrajectory,
+            "/left_joint_trajectory_controller/joint_trajectory",
+            10,
+        )
+        self.right_traj_pub = self.create_publisher(
+            JointTrajectory,
+            "/right_joint_trajectory_controller/joint_trajectory",
+            10,
+        )
+
+        # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        # GRIPPER ACTION CLIENTS (NEW!)
+        # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        self.left_gripper_client = ActionClient(
+            self,
+            GripperCommand,
+            "/left_gripper_controller/gripper_cmd"
+        )
+        self.right_gripper_client = ActionClient(
+            self,
+            GripperCommand,
+            "/right_gripper_controller/gripper_cmd"
+        )
+
+        # Wait for gripper servers to be available
+        self.get_logger().info("Waiting for gripper action servers...")
+        left_available = self.left_gripper_client.wait_for_server(timeout_sec=5.0)
+        right_available = self.right_gripper_client.wait_for_server(timeout_sec=5.0)
+        
+        if left_available:
+            self.get_logger().info("✅ LEFT gripper action server READY")
+        else:
+            self.get_logger().error("❌ LEFT gripper action server NOT AVAILABLE")
+        
+        if right_available:
+            self.get_logger().info("✅ RIGHT gripper action server READY")
+        else:
+            self.get_logger().error("❌ RIGHT gripper action server NOT AVAILABLE")
+
+        # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        # TRAJECTORY SUBSCRIBER
+        # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        self.create_subscription(
+            JointTrajectory,
+            "/joint_trajectory",
+            self._on_trajectory,
+            10,
+        )
+
+        self._recv_count = 0
+        self._last_left_gripper_pos = None
+        self._last_right_gripper_pos = None
+
+        self.get_logger().info(
+            "✅ Relay READY:\n"
+            "   ARM TRAJECTORIES: /joint_trajectory → left + right controllers (7 joints each)\n"
+            "   GRIPPER ACTIONS: gripper positions → action servers"
+        )
+
+    def _on_trajectory(self, msg: JointTrajectory):
+        """Process incoming trajectory message."""
+        self._recv_count += 1
+
+        left_arm_indices = []
+        right_arm_indices = []
+        left_gripper_idx = None
+        right_gripper_idx = None
+
+        # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        # EXTRACT JOINT INDICES
+        # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        for i, name in enumerate(msg.joint_names):
+            # Gripper joints
+            if "finger_joint" in name:
+                if "left" in name:
+                    left_gripper_idx = i
+                elif "right" in name:
+                    right_gripper_idx = i
+                continue  # Skip gripper from trajectory
+
+            # Arm joints
+            if name.startswith("openarm_left_"):
+                left_arm_indices.append(i)
+            elif name.startswith("openarm_right_"):
+                right_arm_indices.append(i)
+
+        # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        # LOG FIRST MESSAGE
+        # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        if self._recv_count == 1:
+            self.get_logger().info(
+                f"[FIRST MESSAGE] Received {len(msg.joint_names)} total joints"
+            )
+            self.get_logger().info(f"  Left arm: {len(left_arm_indices)} joints")
+            self.get_logger().info(f"  Right arm: {len(right_arm_indices)} joints")
+            self.get_logger().info(f"  Left gripper index: {left_gripper_idx}")
+            self.get_logger().info(f"  Right gripper index: {right_gripper_idx}")
+            self.get_logger().info(f"  Joint names: {msg.joint_names}")
+
+        # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        # FORWARD ARM TRAJECTORIES
+        # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        if msg.points:
+            for indices, pub, side in [
+                (left_arm_indices, self.left_traj_pub, "left"),
+                (right_arm_indices, self.right_traj_pub, "right"),
+            ]:
+                if not indices:
+                    continue
+
+                out = JointTrajectory()
+                out.header = msg.header
+                out.joint_names = [msg.joint_names[i] for i in indices]
+
+                for pt in msg.points:
+                    new_pt = JointTrajectoryPoint()
+                    new_pt.time_from_start = pt.time_from_start
+                    if pt.positions:
+                        new_pt.positions = [pt.positions[i] for i in indices]
+                    if pt.velocities:
+                        new_pt.velocities = [pt.velocities[i] for i in indices]
+                    if pt.accelerations:
+                        new_pt.accelerations = [pt.accelerations[i] for i in indices]
+                    out.points.append(new_pt)
+
+                pub.publish(out)
+
+            # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+            # FORWARD GRIPPER COMMANDS TO ACTION SERVERS (NEW!)
+            # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+            pt = msg.points[0]  # First point has the target position
+
+            # LEFT GRIPPER
+            if left_gripper_idx is not None and pt.positions:
+                left_gripper_pos = pt.positions[left_gripper_idx]
+                
+                # Only send if position changed (avoid flooding)
+                if (self._last_left_gripper_pos is None or
+                    abs(left_gripper_pos - self._last_left_gripper_pos) > 0.01):
+                    
+                    self._send_gripper_command(
+                        self.left_gripper_client,
+                        left_gripper_pos,
+                        "LEFT"
+                    )
+                    self._last_left_gripper_pos = left_gripper_pos
+
+            # RIGHT GRIPPER
+            if right_gripper_idx is not None and pt.positions:
+                right_gripper_pos = pt.positions[right_gripper_idx]
+                
+                # Only send if position changed (avoid flooding)
+                if (self._last_right_gripper_pos is None or
+                    abs(right_gripper_pos - self._last_right_gripper_pos) > 0.01):
+                    
+                    self._send_gripper_command(
+                        self.right_gripper_client,
+                        right_gripper_pos,
+                        "RIGHT"
+                    )
+                    self._last_right_gripper_pos = right_gripper_pos
+
+    def _send_gripper_command(self, client, position, side):
+        """Send gripper position command via action server."""
+        try:
+            goal = GripperCommand.Goal()
+            goal.command.position = position
+            goal.command.max_effort = 10.0
+
+            # Send goal asynchronously (non-blocking)
+            future = client.send_goal_async(goal)
+            
+            self.get_logger().info(f"📤 {side} gripper command sent: position={position:.3f}")
+            
+        except Exception as e:
+            self.get_logger().error(f"❌ {side} gripper ERROR: {e}")
+
+
+def main():
+    rclpy.init()
+    node = JointTrajectoryRelay()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
+
+
+if __name__ == "__main__":
+    main()

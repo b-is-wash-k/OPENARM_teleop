@@ -1,0 +1,466 @@
+[Init] IK solvers ready.
+[Init] Keyboard registered.
+[Info] DOFs (22): ['openarm_left_joint1', 'openarm_right_joint1', 'openarm_left_joint2', 'openarm_right_joint2', 'openarm_left_joint3', 'openarm_right_joint3', 'openarm_left_joint4', 'openarm_right_joint4', 'openarm_left_joint5', 'openarm_right_joint5', 'openarm_left_joint6', 'openarm_right_joint6', 'openarm_left_joint7', 'openarm_right_joint7', 'openarm_left_finger_joint1', 'openarm_left_finger_joint2', 'openarm_left_hand', 'openarm_right_finger_joint1', 'openarm_right_finger_joint2', 'openarm_right_hand', 'openarm_left_ee_tcp_joint', 'openarm_right_ee_tcp_joint']
+[Info] Left  arm indices : [0, 2, 4, 6, 8, 10, 12]
+[Info] Right arm indices : [1, 3, 5, 7, 9, 11, 13]
+[Info] Left  grip indices: [14, 15]
+[Info] Right grip indices: [17, 18]
+[FK] Left  home EE : [0.    0.153 0.162]
+[FK] Right home EE : [ 0.    -0.153  0.162]
+
+============================================================
+OpenArm Keyboard Teleop — READY
+============================================================
+  L         — Reset active arm to home
+  Tab       — Switch active arm (left ↔ right)
+  K         — Toggle gripper open/close
+  W / S     — EE forward / back  (X)
+  A / D     — EE left  / right   (Y)
+  Q / E     — EE up    / down    (Z)
+  Z / X     — Roll  + / -
+  T / G     — Pitch + / -
+  C / V     — Yaw   + / -
+
+  Active arm: RIGHT
+============================================================
+2026-04-15T12:01:44Z [436,836ms] [Error] [omni.kit.app._impl] [py stderr]: KeyError: <class 'NoneType'>
+eeeq2026-04-15T12:01:55Z [447,741ms] [Warning] [omni.usd] Warning: in SdfPath at line 144 of /builds/omniverse/usd-ci/USD/pxr/usd/sdf/path.cpp -- Ill-formed SdfPath <>: :1:0(0): parse error matching pxrInternal_v0_24__pxrReserved__::Sdf_PathParser::Path
+
+2026-04-15T12:01:55Z [447,741ms] [Warning] [omni.usd] Warning: in SdfPath at line 144 of /builds/omniverse/usd-ci/USD/pxr/usd/sdf/path.cpp -- Ill-formed SdfPath <>: :1:0(0): parse error matching pxrInternal_v0_24__pxrReserved__::Sdf_PathParser::Path
+
+2026-04-15T12:01:55Z [447,741ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:01:55Z [447,741ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.selector-1.1.3+69cbf6ad/omni/kit/manipulator/selector/manipulator_selector.py", line 45, in <lambda>
+2026-04-15T12:01:55Z [447,742ms] [Error] [omni.kit.app._impl] [py stderr]:     on_event=lambda _: self._on_selection_changed()
+2026-04-15T12:01:55Z [447,742ms] [Error] [omni.kit.app._impl] [py stderr]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:01:55Z [447,742ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.selector-1.1.3+69cbf6ad/omni/kit/manipulator/selector/manipulator_selector.py", line 123, in _on_selection_changed
+2026-04-15T12:01:55Z [447,742ms] [Error] [omni.kit.app._impl] [py stderr]:     res = manipulator.on_selection_changed(self._usd_context.get_stage(), selection_mixed_sdf)
+2026-04-15T12:01:55Z [447,742ms] [Error] [omni.kit.app._impl] [py stderr]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:01:55Z [447,742ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/prim_transform_manipulator.py", line 262, in on_selection_changed
+2026-04-15T12:01:55Z [447,742ms] [Error] [omni.kit.app._impl] [py stderr]:     self.model.on_selection_changed(selection_prioterized)
+2026-04-15T12:01:55Z [447,742ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/model.py", line 315, in on_selection_changed
+2026-04-15T12:01:55Z [447,742ms] [Error] [omni.kit.app._impl] [py stderr]:     prim = self._data_accessor_selector.get_prim_at_path(sdf_path)
+2026-04-15T12:01:55Z [447,742ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:01:55Z [447,742ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/prim_data_accessor_selector.py", line 291, in get_prim_at_path
+2026-04-15T12:01:55Z [447,743ms] [Error] [omni.kit.app._impl] [py stderr]:     return self._data_accessors[self._data_types[type(sdf_path)]].get_prim_at_path(sdf_path)
+2026-04-15T12:01:55Z [447,743ms] [Error] [omni.kit.app._impl] [py stderr]:                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+2026-04-15T12:01:55Z [447,743ms] [Error] [omni.kit.app._impl] [py stderr]: KeyError: <class 'NoneType'>
+2026-04-15T12:01:55Z [447,987ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:01:55Z [447,987ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:01:55Z [447,987ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:01:55Z [447,987ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:01:55Z [447,987ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:01:55Z [448,518ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:01:55Z [448,518ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:01:55Z [448,518ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:01:55Z [448,518ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:01:55Z [448,518ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:01:56Z [449,476ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:01:56Z [449,476ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:01:56Z [449,477ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:01:56Z [449,477ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:01:56Z [449,477ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:01:57Z [449,954ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:01:57Z [449,954ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:01:57Z [449,955ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:01:57Z [449,955ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:01:57Z [449,955ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:01:58Z [450,798ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:01:58Z [450,798ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:01:58Z [450,798ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:01:58Z [450,798ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:01:58Z [450,798ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:01:58Z [451,258ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:01:58Z [451,258ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:01:58Z [451,258ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:01:58Z [451,258ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:01:58Z [451,258ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:02Z [455,174ms] [Warning] [omni.usd] Warning: in SdfPath at line 144 of /builds/omniverse/usd-ci/USD/pxr/usd/sdf/path.cpp -- Ill-formed SdfPath <>: :1:0(0): parse error matching pxrInternal_v0_24__pxrReserved__::Sdf_PathParser::Path
+
+2026-04-15T12:02:02Z [455,175ms] [Warning] [omni.usd] Warning: in SdfPath at line 144 of /builds/omniverse/usd-ci/USD/pxr/usd/sdf/path.cpp -- Ill-formed SdfPath <>: :1:0(0): parse error matching pxrInternal_v0_24__pxrReserved__::Sdf_PathParser::Path
+
+2026-04-15T12:02:02Z [455,175ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:02Z [455,176ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.selector-1.1.3+69cbf6ad/omni/kit/manipulator/selector/manipulator_selector.py", line 45, in <lambda>
+2026-04-15T12:02:02Z [455,176ms] [Error] [omni.kit.app._impl] [py stderr]:     on_event=lambda _: self._on_selection_changed()
+2026-04-15T12:02:02Z [455,176ms] [Error] [omni.kit.app._impl] [py stderr]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:02Z [455,176ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.selector-1.1.3+69cbf6ad/omni/kit/manipulator/selector/manipulator_selector.py", line 123, in _on_selection_changed
+2026-04-15T12:02:02Z [455,176ms] [Error] [omni.kit.app._impl] [py stderr]:     res = manipulator.on_selection_changed(self._usd_context.get_stage(), selection_mixed_sdf)
+2026-04-15T12:02:02Z [455,177ms] [Error] [omni.kit.app._impl] [py stderr]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:02Z [455,177ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/prim_transform_manipulator.py", line 262, in on_selection_changed
+2026-04-15T12:02:02Z [455,177ms] [Error] [omni.kit.app._impl] [py stderr]:     self.model.on_selection_changed(selection_prioterized)
+2026-04-15T12:02:02Z [455,177ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/model.py", line 315, in on_selection_changed
+2026-04-15T12:02:02Z [455,177ms] [Error] [omni.kit.app._impl] [py stderr]:     prim = self._data_accessor_selector.get_prim_at_path(sdf_path)
+2026-04-15T12:02:02Z [455,178ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:02Z [455,178ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/prim_data_accessor_selector.py", line 291, in get_prim_at_path
+2026-04-15T12:02:02Z [455,178ms] [Error] [omni.kit.app._impl] [py stderr]:     return self._data_accessors[self._data_types[type(sdf_path)]].get_prim_at_path(sdf_path)
+2026-04-15T12:02:02Z [455,178ms] [Error] [omni.kit.app._impl] [py stderr]:                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+2026-04-15T12:02:02Z [455,178ms] [Error] [omni.kit.app._impl] [py stderr]: KeyError: <class 'NoneType'>
+2026-04-15T12:02:02Z [455,627ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:02Z [455,627ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:02Z [455,628ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:02Z [455,628ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:02Z [455,628ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:03Z [456,012ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:03Z [456,012ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:03Z [456,012ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:03Z [456,012ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:03Z [456,012ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:03Z [456,401ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:03Z [456,402ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:03Z [456,402ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:03Z [456,402ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:03Z [456,402ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:04Z [456,730ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:04Z [456,730ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:04Z [456,730ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:04Z [456,730ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:04Z [456,731ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:04Z [457,103ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:04Z [457,104ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:04Z [457,104ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:04Z [457,104ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:04Z [457,104ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:04Z [457,399ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:04Z [457,399ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:04Z [457,399ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:04Z [457,399ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:04Z [457,399ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:05Z [457,755ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:05Z [457,756ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:05Z [457,756ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:05Z [457,756ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:05Z [457,756ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:05Z [458,253ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:05Z [458,253ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:05Z [458,254ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:05Z [458,254ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:05Z [458,254ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:05Z [458,583ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:05Z [458,584ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:05Z [458,584ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:05Z [458,584ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:05Z [458,584ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:06Z [458,911ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:06Z [458,911ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:06Z [458,911ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:06Z [458,911ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:06Z [458,911ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:06Z [459,155ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:06Z [459,156ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:06Z [459,156ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:06Z [459,156ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:06Z [459,157ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:09Z [461,919ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:09Z [461,919ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:09Z [461,920ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:09Z [461,920ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:09Z [461,920ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:09Z [462,470ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:09Z [462,470ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:09Z [462,470ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:09Z [462,470ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:09Z [462,470ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:10Z [463,267ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:10Z [463,267ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:10Z [463,267ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:10Z [463,267ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:10Z [463,268ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:18Z [471,541ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:18Z [471,541ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:18Z [471,542ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:18Z [471,542ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:18Z [471,542ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:18Z [471,569ms] [Warning] [omni.usd] Warning: in SdfPath at line 144 of /builds/omniverse/usd-ci/USD/pxr/usd/sdf/path.cpp -- Ill-formed SdfPath <>: :1:0(0): parse error matching pxrInternal_v0_24__pxrReserved__::Sdf_PathParser::Path
+
+2026-04-15T12:02:18Z [471,569ms] [Warning] [omni.usd] Warning: in SdfPath at line 144 of /builds/omniverse/usd-ci/USD/pxr/usd/sdf/path.cpp -- Ill-formed SdfPath <>: :1:0(0): parse error matching pxrInternal_v0_24__pxrReserved__::Sdf_PathParser::Path
+
+2026-04-15T12:02:18Z [471,570ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:18Z [471,570ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.selector-1.1.3+69cbf6ad/omni/kit/manipulator/selector/manipulator_selector.py", line 45, in <lambda>
+2026-04-15T12:02:18Z [471,570ms] [Error] [omni.kit.app._impl] [py stderr]:     on_event=lambda _: self._on_selection_changed()
+2026-04-15T12:02:18Z [471,570ms] [Error] [omni.kit.app._impl] [py stderr]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:18Z [471,570ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.selector-1.1.3+69cbf6ad/omni/kit/manipulator/selector/manipulator_selector.py", line 123, in _on_selection_changed
+2026-04-15T12:02:18Z [471,570ms] [Error] [omni.kit.app._impl] [py stderr]:     res = manipulator.on_selection_changed(self._usd_context.get_stage(), selection_mixed_sdf)
+2026-04-15T12:02:18Z [471,570ms] [Error] [omni.kit.app._impl] [py stderr]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:18Z [471,570ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/prim_transform_manipulator.py", line 262, in on_selection_changed
+2026-04-15T12:02:18Z [471,570ms] [Error] [omni.kit.app._impl] [py stderr]:     self.model.on_selection_changed(selection_prioterized)
+2026-04-15T12:02:18Z [471,570ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/model.py", line 315, in on_selection_changed
+2026-04-15T12:02:18Z [471,571ms] [Error] [omni.kit.app._impl] [py stderr]:     prim = self._data_accessor_selector.get_prim_at_path(sdf_path)
+2026-04-15T12:02:18Z [471,571ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:18Z [471,571ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/prim_data_accessor_selector.py", line 291, in get_prim_at_path
+2026-04-15T12:02:18Z [471,571ms] [Error] [omni.kit.app._impl] [py stderr]:     return self._data_accessors[self._data_types[type(sdf_path)]].get_prim_at_path(sdf_path)
+2026-04-15T12:02:18Z [471,571ms] [Error] [omni.kit.app._impl] [py stderr]:                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+2026-04-15T12:02:18Z [471,571ms] [Error] [omni.kit.app._impl] [py stderr]: KeyError: <class 'NoneType'>
+2026-04-15T12:02:19Z [472,300ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:19Z [472,301ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:19Z [472,301ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:19Z [472,301ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:19Z [472,301ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:20Z [472,707ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:20Z [472,707ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:20Z [472,707ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:20Z [472,707ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:20Z [472,707ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:20Z [473,154ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:20Z [473,154ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:20Z [473,154ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:20Z [473,154ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:20Z [473,154ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:20Z [473,282ms] [Warning] [omni.usd] Warning: in SdfPath at line 144 of /builds/omniverse/usd-ci/USD/pxr/usd/sdf/path.cpp -- Ill-formed SdfPath <>: :1:0(0): parse error matching pxrInternal_v0_24__pxrReserved__::Sdf_PathParser::Path
+
+2026-04-15T12:02:20Z [473,283ms] [Warning] [omni.usd] Warning: in SdfPath at line 144 of /builds/omniverse/usd-ci/USD/pxr/usd/sdf/path.cpp -- Ill-formed SdfPath <>: :1:0(0): parse error matching pxrInternal_v0_24__pxrReserved__::Sdf_PathParser::Path
+
+2026-04-15T12:02:20Z [473,283ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:20Z [473,283ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.selector-1.1.3+69cbf6ad/omni/kit/manipulator/selector/manipulator_selector.py", line 45, in <lambda>
+2026-04-15T12:02:20Z [473,283ms] [Error] [omni.kit.app._impl] [py stderr]:     on_event=lambda _: self._on_selection_changed()
+2026-04-15T12:02:20Z [473,283ms] [Error] [omni.kit.app._impl] [py stderr]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:20Z [473,283ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.selector-1.1.3+69cbf6ad/omni/kit/manipulator/selector/manipulator_selector.py", line 123, in _on_selection_changed
+2026-04-15T12:02:20Z [473,283ms] [Error] [omni.kit.app._impl] [py stderr]:     res = manipulator.on_selection_changed(self._usd_context.get_stage(), selection_mixed_sdf)
+2026-04-15T12:02:20Z [473,283ms] [Error] [omni.kit.app._impl] [py stderr]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:20Z [473,283ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/prim_transform_manipulator.py", line 262, in on_selection_changed
+2026-04-15T12:02:20Z [473,284ms] [Error] [omni.kit.app._impl] [py stderr]:     self.model.on_selection_changed(selection_prioterized)
+2026-04-15T12:02:20Z [473,284ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/model.py", line 315, in on_selection_changed
+2026-04-15T12:02:20Z [473,284ms] [Error] [omni.kit.app._impl] [py stderr]:     prim = self._data_accessor_selector.get_prim_at_path(sdf_path)
+2026-04-15T12:02:20Z [473,284ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:20Z [473,284ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/prim_data_accessor_selector.py", line 291, in get_prim_at_path
+2026-04-15T12:02:20Z [473,284ms] [Error] [omni.kit.app._impl] [py stderr]:     return self._data_accessors[self._data_types[type(sdf_path)]].get_prim_at_path(sdf_path)
+2026-04-15T12:02:20Z [473,284ms] [Error] [omni.kit.app._impl] [py stderr]:                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+2026-04-15T12:02:20Z [473,284ms] [Error] [omni.kit.app._impl] [py stderr]: KeyError: <class 'NoneType'>
+2026-04-15T12:02:20Z [473,396ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:20Z [473,396ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:20Z [473,396ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:20Z [473,396ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:20Z [473,396ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:21Z [473,646ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:21Z [473,646ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:21Z [473,646ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:21Z [473,646ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:21Z [473,646ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:21Z [473,845ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:21Z [473,845ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:21Z [473,845ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:21Z [473,845ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:21Z [473,845ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:21Z [474,340ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:21Z [474,340ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:21Z [474,341ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:21Z [474,341ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:21Z [474,341ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:22Z [475,173ms] [Warning] [omni.usd] Warning: in SdfPath at line 144 of /builds/omniverse/usd-ci/USD/pxr/usd/sdf/path.cpp -- Ill-formed SdfPath <>: :1:0(0): parse error matching pxrInternal_v0_24__pxrReserved__::Sdf_PathParser::Path
+
+2026-04-15T12:02:22Z [475,174ms] [Warning] [omni.usd] Warning: in SdfPath at line 144 of /builds/omniverse/usd-ci/USD/pxr/usd/sdf/path.cpp -- Ill-formed SdfPath <>: :1:0(0): parse error matching pxrInternal_v0_24__pxrReserved__::Sdf_PathParser::Path
+
+2026-04-15T12:02:22Z [475,174ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:22Z [475,174ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.selector-1.1.3+69cbf6ad/omni/kit/manipulator/selector/manipulator_selector.py", line 45, in <lambda>
+2026-04-15T12:02:22Z [475,174ms] [Error] [omni.kit.app._impl] [py stderr]:     on_event=lambda _: self._on_selection_changed()
+2026-04-15T12:02:22Z [475,174ms] [Error] [omni.kit.app._impl] [py stderr]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:22Z [475,175ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.selector-1.1.3+69cbf6ad/omni/kit/manipulator/selector/manipulator_selector.py", line 123, in _on_selection_changed
+2026-04-15T12:02:22Z [475,175ms] [Error] [omni.kit.app._impl] [py stderr]:     res = manipulator.on_selection_changed(self._usd_context.get_stage(), selection_mixed_sdf)
+2026-04-15T12:02:22Z [475,175ms] [Error] [omni.kit.app._impl] [py stderr]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:22Z [475,175ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/prim_transform_manipulator.py", line 262, in on_selection_changed
+2026-04-15T12:02:22Z [475,175ms] [Error] [omni.kit.app._impl] [py stderr]:     self.model.on_selection_changed(selection_prioterized)
+2026-04-15T12:02:22Z [475,175ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/model.py", line 315, in on_selection_changed
+2026-04-15T12:02:22Z [475,175ms] [Error] [omni.kit.app._impl] [py stderr]:     prim = self._data_accessor_selector.get_prim_at_path(sdf_path)
+2026-04-15T12:02:22Z [475,176ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:22Z [475,176ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/prim_data_accessor_selector.py", line 291, in get_prim_at_path
+2026-04-15T12:02:22Z [475,176ms] [Error] [omni.kit.app._impl] [py stderr]:     return self._data_accessors[self._data_types[type(sdf_path)]].get_prim_at_path(sdf_path)
+2026-04-15T12:02:22Z [475,176ms] [Error] [omni.kit.app._impl] [py stderr]:                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+2026-04-15T12:02:22Z [475,176ms] [Error] [omni.kit.app._impl] [py stderr]: KeyError: <class 'NoneType'>
+2026-04-15T12:02:22Z [475,236ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:22Z [475,237ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:22Z [475,237ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:22Z [475,237ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:22Z [475,237ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:22Z [475,441ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:22Z [475,441ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:22Z [475,441ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:22Z [475,441ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:22Z [475,441ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:23Z [475,766ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:23Z [475,766ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:23Z [475,766ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:23Z [475,766ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:23Z [475,766ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:25Z [477,779ms] [Warning] [omni.usd] Warning: in SdfPath at line 144 of /builds/omniverse/usd-ci/USD/pxr/usd/sdf/path.cpp -- Ill-formed SdfPath <>: :1:0(0): parse error matching pxrInternal_v0_24__pxrReserved__::Sdf_PathParser::Path
+
+2026-04-15T12:02:25Z [477,780ms] [Warning] [omni.usd] Warning: in SdfPath at line 144 of /builds/omniverse/usd-ci/USD/pxr/usd/sdf/path.cpp -- Ill-formed SdfPath <>: :1:0(0): parse error matching pxrInternal_v0_24__pxrReserved__::Sdf_PathParser::Path
+
+2026-04-15T12:02:25Z [477,781ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:25Z [477,781ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.selector-1.1.3+69cbf6ad/omni/kit/manipulator/selector/manipulator_selector.py", line 45, in <lambda>
+2026-04-15T12:02:25Z [477,781ms] [Error] [omni.kit.app._impl] [py stderr]:     on_event=lambda _: self._on_selection_changed()
+2026-04-15T12:02:25Z [477,782ms] [Error] [omni.kit.app._impl] [py stderr]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:25Z [477,782ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.selector-1.1.3+69cbf6ad/omni/kit/manipulator/selector/manipulator_selector.py", line 123, in _on_selection_changed
+2026-04-15T12:02:25Z [477,782ms] [Error] [omni.kit.app._impl] [py stderr]:     res = manipulator.on_selection_changed(self._usd_context.get_stage(), selection_mixed_sdf)
+2026-04-15T12:02:25Z [477,782ms] [Error] [omni.kit.app._impl] [py stderr]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:25Z [477,782ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/prim_transform_manipulator.py", line 262, in on_selection_changed
+2026-04-15T12:02:25Z [477,783ms] [Error] [omni.kit.app._impl] [py stderr]:     self.model.on_selection_changed(selection_prioterized)
+2026-04-15T12:02:25Z [477,783ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/model.py", line 315, in on_selection_changed
+2026-04-15T12:02:25Z [477,783ms] [Error] [omni.kit.app._impl] [py stderr]:     prim = self._data_accessor_selector.get_prim_at_path(sdf_path)
+2026-04-15T12:02:25Z [477,784ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:25Z [477,784ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/prim_data_accessor_selector.py", line 291, in get_prim_at_path
+2026-04-15T12:02:25Z [477,784ms] [Error] [omni.kit.app._impl] [py stderr]:     return self._data_accessors[self._data_types[type(sdf_path)]].get_prim_at_path(sdf_path)
+2026-04-15T12:02:25Z [477,784ms] [Error] [omni.kit.app._impl] [py stderr]:                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+2026-04-15T12:02:25Z [477,784ms] [Error] [omni.kit.app._impl] [py stderr]: KeyError: <class 'NoneType'>
+2026-04-15T12:02:25Z [478,512ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:25Z [478,512ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:25Z [478,512ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:25Z [478,512ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:25Z [478,513ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:26Z [478,824ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:26Z [478,824ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:26Z [478,825ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:26Z [478,825ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:26Z [478,825ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:26Z [479,067ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:26Z [479,067ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:26Z [479,068ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:26Z [479,068ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:26Z [479,068ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:26Z [479,526ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:26Z [479,526ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:26Z [479,527ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:26Z [479,527ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:26Z [479,527ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:27Z [479,724ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:27Z [479,724ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:27Z [479,724ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:27Z [479,724ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:27Z [479,725ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:27Z [479,900ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:27Z [479,900ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:27Z [479,900ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:27Z [479,900ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:27Z [479,900ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:27Z [480,332ms] [Warning] [omni.usd] Warning: in SdfPath at line 144 of /builds/omniverse/usd-ci/USD/pxr/usd/sdf/path.cpp -- Ill-formed SdfPath <>: :1:0(0): parse error matching pxrInternal_v0_24__pxrReserved__::Sdf_PathParser::Path
+
+2026-04-15T12:02:27Z [480,332ms] [Warning] [omni.usd] Warning: in SdfPath at line 144 of /builds/omniverse/usd-ci/USD/pxr/usd/sdf/path.cpp -- Ill-formed SdfPath <>: :1:0(0): parse error matching pxrInternal_v0_24__pxrReserved__::Sdf_PathParser::Path
+
+2026-04-15T12:02:27Z [480,333ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:27Z [480,333ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.selector-1.1.3+69cbf6ad/omni/kit/manipulator/selector/manipulator_selector.py", line 45, in <lambda>
+2026-04-15T12:02:27Z [480,333ms] [Error] [omni.kit.app._impl] [py stderr]:     on_event=lambda _: self._on_selection_changed()
+2026-04-15T12:02:27Z [480,333ms] [Error] [omni.kit.app._impl] [py stderr]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:27Z [480,333ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.selector-1.1.3+69cbf6ad/omni/kit/manipulator/selector/manipulator_selector.py", line 123, in _on_selection_changed
+2026-04-15T12:02:27Z [480,333ms] [Error] [omni.kit.app._impl] [py stderr]:     res = manipulator.on_selection_changed(self._usd_context.get_stage(), selection_mixed_sdf)
+2026-04-15T12:02:27Z [480,333ms] [Error] [omni.kit.app._impl] [py stderr]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:27Z [480,333ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/prim_transform_manipulator.py", line 262, in on_selection_changed
+2026-04-15T12:02:27Z [480,334ms] [Error] [omni.kit.app._impl] [py stderr]:     self.model.on_selection_changed(selection_prioterized)
+2026-04-15T12:02:27Z [480,334ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/model.py", line 315, in on_selection_changed
+2026-04-15T12:02:27Z [480,334ms] [Error] [omni.kit.app._impl] [py stderr]:     prim = self._data_accessor_selector.get_prim_at_path(sdf_path)
+2026-04-15T12:02:27Z [480,334ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:27Z [480,334ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/prim_data_accessor_selector.py", line 291, in get_prim_at_path
+2026-04-15T12:02:27Z [480,334ms] [Error] [omni.kit.app._impl] [py stderr]:     return self._data_accessors[self._data_types[type(sdf_path)]].get_prim_at_path(sdf_path)
+2026-04-15T12:02:27Z [480,334ms] [Error] [omni.kit.app._impl] [py stderr]:                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+2026-04-15T12:02:27Z [480,334ms] [Error] [omni.kit.app._impl] [py stderr]: KeyError: <class 'NoneType'>
+2026-04-15T12:02:29Z [481,993ms] [Warning] [omni.usd] Warning: in SdfPath at line 144 of /builds/omniverse/usd-ci/USD/pxr/usd/sdf/path.cpp -- Ill-formed SdfPath <>: :1:0(0): parse error matching pxrInternal_v0_24__pxrReserved__::Sdf_PathParser::Path
+
+2026-04-15T12:02:29Z [481,993ms] [Warning] [omni.usd] Warning: in SdfPath at line 144 of /builds/omniverse/usd-ci/USD/pxr/usd/sdf/path.cpp -- Ill-formed SdfPath <>: :1:0(0): parse error matching pxrInternal_v0_24__pxrReserved__::Sdf_PathParser::Path
+
+2026-04-15T12:02:29Z [481,994ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:29Z [481,994ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.selector-1.1.3+69cbf6ad/omni/kit/manipulator/selector/manipulator_selector.py", line 45, in <lambda>
+2026-04-15T12:02:29Z [481,994ms] [Error] [omni.kit.app._impl] [py stderr]:     on_event=lambda _: self._on_selection_changed()
+2026-04-15T12:02:29Z [481,994ms] [Error] [omni.kit.app._impl] [py stderr]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:29Z [481,994ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.selector-1.1.3+69cbf6ad/omni/kit/manipulator/selector/manipulator_selector.py", line 123, in _on_selection_changed
+2026-04-15T12:02:29Z [481,994ms] [Error] [omni.kit.app._impl] [py stderr]:     res = manipulator.on_selection_changed(self._usd_context.get_stage(), selection_mixed_sdf)
+2026-04-15T12:02:29Z [481,995ms] [Error] [omni.kit.app._impl] [py stderr]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:29Z [481,995ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/prim_transform_manipulator.py", line 262, in on_selection_changed
+2026-04-15T12:02:29Z [481,995ms] [Error] [omni.kit.app._impl] [py stderr]:     self.model.on_selection_changed(selection_prioterized)
+2026-04-15T12:02:29Z [481,995ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/model.py", line 315, in on_selection_changed
+2026-04-15T12:02:29Z [481,995ms] [Error] [omni.kit.app._impl] [py stderr]:     prim = self._data_accessor_selector.get_prim_at_path(sdf_path)
+2026-04-15T12:02:29Z [481,995ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:29Z [481,995ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/prim_data_accessor_selector.py", line 291, in get_prim_at_path
+2026-04-15T12:02:29Z [481,995ms] [Error] [omni.kit.app._impl] [py stderr]:     return self._data_accessors[self._data_types[type(sdf_path)]].get_prim_at_path(sdf_path)
+2026-04-15T12:02:29Z [481,996ms] [Error] [omni.kit.app._impl] [py stderr]:                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+2026-04-15T12:02:29Z [481,996ms] [Error] [omni.kit.app._impl] [py stderr]: KeyError: <class 'NoneType'>
+2026-04-15T12:02:29Z [482,499ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:29Z [482,499ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:29Z [482,499ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:29Z [482,500ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:29Z [482,500ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:30Z [482,740ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:30Z [482,740ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:30Z [482,740ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:30Z [482,740ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:30Z [482,740ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:30Z [482,988ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:30Z [482,988ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:30Z [482,989ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:30Z [482,989ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:30Z [482,989ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:30Z [483,234ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:30Z [483,234ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:30Z [483,234ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:30Z [483,234ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:30Z [483,234ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:30Z [483,476ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:30Z [483,476ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:30Z [483,476ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:30Z [483,476ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:30Z [483,476ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:31Z [483,702ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:31Z [483,702ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:31Z [483,702ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:31Z [483,702ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:31Z [483,702ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:31Z [483,983ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:31Z [483,983ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:31Z [483,983ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:31Z [483,984ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:31Z [483,984ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:31Z [484,164ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:31Z [484,164ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:31Z [484,164ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:31Z [484,164ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:31Z [484,164ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:41Z [494,466ms] [Warning] [omni.usd] Warning: in SdfPath at line 144 of /builds/omniverse/usd-ci/USD/pxr/usd/sdf/path.cpp -- Ill-formed SdfPath <>: :1:0(0): parse error matching pxrInternal_v0_24__pxrReserved__::Sdf_PathParser::Path
+
+2026-04-15T12:02:41Z [494,467ms] [Warning] [omni.usd] Warning: in SdfPath at line 144 of /builds/omniverse/usd-ci/USD/pxr/usd/sdf/path.cpp -- Ill-formed SdfPath <>: :1:0(0): parse error matching pxrInternal_v0_24__pxrReserved__::Sdf_PathParser::Path
+
+2026-04-15T12:02:41Z [494,468ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:41Z [494,468ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.selector-1.1.3+69cbf6ad/omni/kit/manipulator/selector/manipulator_selector.py", line 45, in <lambda>
+2026-04-15T12:02:41Z [494,468ms] [Error] [omni.kit.app._impl] [py stderr]:     on_event=lambda _: self._on_selection_changed()
+2026-04-15T12:02:41Z [494,468ms] [Error] [omni.kit.app._impl] [py stderr]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:41Z [494,469ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.selector-1.1.3+69cbf6ad/omni/kit/manipulator/selector/manipulator_selector.py", line 123, in _on_selection_changed
+2026-04-15T12:02:41Z [494,469ms] [Error] [omni.kit.app._impl] [py stderr]:     res = manipulator.on_selection_changed(self._usd_context.get_stage(), selection_mixed_sdf)
+2026-04-15T12:02:41Z [494,469ms] [Error] [omni.kit.app._impl] [py stderr]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:41Z [494,469ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/prim_transform_manipulator.py", line 262, in on_selection_changed
+2026-04-15T12:02:41Z [494,470ms] [Error] [omni.kit.app._impl] [py stderr]:     self.model.on_selection_changed(selection_prioterized)
+2026-04-15T12:02:41Z [494,470ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/model.py", line 315, in on_selection_changed
+2026-04-15T12:02:41Z [494,470ms] [Error] [omni.kit.app._impl] [py stderr]:     prim = self._data_accessor_selector.get_prim_at_path(sdf_path)
+2026-04-15T12:02:41Z [494,470ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T12:02:41Z [494,471ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/anaconda3/envs/env_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.kit.manipulator.prim.core-107.0.8+69cbf6ad/omni/kit/manipulator/prim/core/prim_data_accessor_selector.py", line 291, in get_prim_at_path
+2026-04-15T12:02:41Z [494,471ms] [Error] [omni.kit.app._impl] [py stderr]:     return self._data_accessors[self._data_types[type(sdf_path)]].get_prim_at_path(sdf_path)
+2026-04-15T12:02:41Z [494,471ms] [Error] [omni.kit.app._impl] [py stderr]:                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+2026-04-15T12:02:41Z [494,471ms] [Error] [omni.kit.app._impl] [py stderr]: KeyError: <class 'NoneType'>
+2026-04-15T12:02:42Z [494,998ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:42Z [494,998ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:42Z [494,999ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:42Z [494,999ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:42Z [494,999ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:02:43Z [496,069ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:02:43Z [496,069ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:02:43Z [496,069ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:02:43Z [496,069ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:02:43Z [496,069ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+
+
+omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:03:51Z [564,058ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:03:51Z [564,058ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:03:51Z [564,086ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:03:51Z [564,086ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:03:51Z [564,086ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:03:51Z [564,087ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:03:51Z [564,087ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:03:51Z [564,117ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:03:51Z [564,117ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:03:51Z [564,117ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:03:51Z [564,117ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:03:51Z [564,118ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:03:51Z [564,318ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:03:51Z [564,318ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:03:51Z [564,318ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:03:51Z [564,318ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:03:51Z [564,319ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'
+2026-04-15T12:03:52Z [564,701ms] [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2026-04-15T12:03:52Z [564,701ms] [Error] [omni.kit.app._impl] [py stderr]:   File "/home/air-lab-ncsu/OPEN_ARM/quest3_streamer/src/isaac_openarm_keyboard_teleop.py", line 113, in _on_keyboard_event
+2026-04-15T12:03:52Z [564,701ms] [Error] [omni.kit.app._impl] [py stderr]:     name = event.input.name
+2026-04-15T12:03:52Z [564,702ms] [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^
+2026-04-15T12:03:52Z [564,702ms] [Error] [omni.kit.app._impl] [py stderr]: AttributeError: 'str' object has no attribute 'name'

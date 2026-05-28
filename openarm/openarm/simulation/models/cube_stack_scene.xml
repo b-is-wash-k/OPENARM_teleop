@@ -1,0 +1,208 @@
+<mujoco model="openarm cube stack scene">
+  <!--
+    Cube stacking teleoperation scene for OpenArm bimanual robot.
+
+    Robot sits on a 0.5 m pedestal (programmatic lift in cube_stack_teleop.py).
+    After lift: arm bases at (0, ±0.031, 1.198 m).
+    TCP at preferred joint config: (0.19, ±0.51, 1.52 m).
+
+    Work table: top surface at z = 1.10 m, centred at x = 0.45 m.
+    Cubes: 4 cm × 4 cm × 4 cm on the work table.
+      cube_A (red)   — left  arm side: (0.35, +0.25, 1.12)
+      cube_B (blue)  — right arm side: (0.35, -0.25, 1.12)
+      cube_C (green) — centre far:     (0.50,  0.00, 1.12)
+
+    Workspace deltas from preferred TCP to cube_A/B:
+      Δx = +0.17 m  Δy = ∓0.26 m  Δz = -0.40 m  (well within 7-DOF reach)
+
+    Load with cube_stack_teleop.py (uses mj_step for physics + kinematic arm override).
+  -->
+  <include file="openarm.xml"/>
+
+  <statistic center="0.25 0 1.0" extent="2.5"/>
+
+  <visual>
+    <headlight diffuse="0.7 0.7 0.7" ambient="0.3 0.3 0.3" specular="0 0 0"/>
+    <rgba haze="1 1 1 1"/>
+    <global azimuth="-150" elevation="-20"/>
+  </visual>
+
+  <!-- ── Assets ───────────────────────────────────────────────────────────── -->
+  <asset>
+    <texture name="white_sky" type="skybox" builtin="flat"
+             rgb1="1 1 1" rgb2="1 1 1" width="512" height="512"/>
+
+    <!-- Floor checker texture -->
+    <texture type="2d" name="groundplane" builtin="checker" mark="edge"
+             rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3"
+             markrgb="0.8 0.8 0.8" width="300" height="300"/>
+    <material name="groundplane" texture="groundplane"
+              texuniform="true" texrepeat="5 5" reflectance="0.2"/>
+
+    <!-- Robot pedestal -->
+    <material name="pedestal_mat" rgba="0.45 0.45 0.50 1" reflectance="0.08"/>
+
+    <!-- Work table -->
+    <material name="table_mat" rgba="0.72 0.52 0.32 1" reflectance="0.05"/>
+    <material name="table_leg" rgba="0.55 0.38 0.22 1" reflectance="0.03"/>
+
+    <!-- Cube materials (distinct colours) -->
+    <material name="cube_red"   rgba="0.85 0.20 0.15 1" reflectance="0.1"/>
+    <material name="cube_blue"  rgba="0.15 0.35 0.85 1" reflectance="0.1"/>
+    <material name="cube_green" rgba="0.15 0.75 0.25 1" reflectance="0.1"/>
+  </asset>
+
+  <!-- ── World ────────────────────────────────────────────────────────────── -->
+  <worldbody>
+    <light pos="0 0 2.5" dir="0 0 -1" directional="true" diffuse="0.8 0.8 0.8"/>
+    <light pos="0.6 0 2.0" dir="0 0 -1" directional="false"
+           diffuse="0.5 0.5 0.5" specular="0.1 0.1 0.1"/>
+
+    <!-- Floor -->
+    <geom name="floor" size="0 0 0.05" type="plane" material="groundplane"
+          friction="0.8 0.01 0.01" contype="1" conaffinity="1"/>
+
+    <!-- ── Robot pedestal ────────────────────────────────────────────────── -->
+    <!--
+      Small table that the OpenArm sits on.
+      Top surface at z = 0.50 m (matches ROBOT_LIFT_Z in cube_stack_teleop.py).
+      The robot body (openarm_body_link0) is programmatically shifted +0.5 m
+      in Z after model load, so it visually rests on this pedestal.
+    -->
+    <body name="robot_pedestal" pos="0 0 0">
+      <!-- Main pedestal slab -->
+      <geom name="pedestal_top" type="box" size="0.28 0.28 0.02"
+            pos="0 0 0.48"
+            material="pedestal_mat"
+            contype="1" conaffinity="1"
+            friction="0.8 0.01 0.01"
+            condim="3"/>
+      <geom name="pedestal_body" type="box" size="0.24 0.24 0.24"
+            pos="0 0 0.24"
+            material="pedestal_mat"
+            contype="1" conaffinity="1"/>
+    </body>
+
+    <!-- ── Work table ────────────────────────────────────────────────────── -->
+    <!--
+      Taller table for the elevated robot workspace.
+      Body at (0.45, 0, 0) in world.
+      Table top geom at local z=1.08, half-height=0.02  →  surface at z=1.10 m.
+    -->
+    <body name="table" pos="0.45 0 0">
+      <!-- Table top surface (collision-enabled) -->
+      <geom name="table_top" type="box" size="0.32 0.42 0.02"
+            pos="0 0 1.08"
+            material="table_mat"
+            friction="1.0 0.01 0.01"
+            contype="1" conaffinity="1"
+            condim="3"/>
+      <!-- Visual apron below top -->
+      <geom name="table_apron" type="box" size="0.28 0.38 0.04"
+            pos="0 0 1.02"
+            material="table_mat"
+            contype="0" conaffinity="0"/>
+      <!-- 4 legs: from z=0 to z=1.06 -->
+      <geom name="leg_fl" type="box" size="0.030 0.030 0.53"
+            pos=" 0.28  0.38 0.53" material="table_leg"
+            contype="0" conaffinity="0"/>
+      <geom name="leg_fr" type="box" size="0.030 0.030 0.53"
+            pos=" 0.28 -0.38 0.53" material="table_leg"
+            contype="0" conaffinity="0"/>
+      <geom name="leg_bl" type="box" size="0.030 0.030 0.53"
+            pos="-0.28  0.38 0.53" material="table_leg"
+            contype="0" conaffinity="0"/>
+      <geom name="leg_br" type="box" size="0.030 0.030 0.53"
+            pos="-0.28 -0.38 0.53" material="table_leg"
+            contype="0" conaffinity="0"/>
+    </body>
+
+    <!-- ── Cubes (free bodies — obey gravity and contacts) ─────────────── -->
+    <!--
+      Table top surface: z = 1.10 m.
+      Cube half-size = 0.02 m  →  cube centre at z = 1.10 + 0.02 = 1.12 m.
+
+      cube_A (red)  at y=+0.25: left  arm swings inward -0.26 m from y=+0.51
+      cube_B (blue) at y=-0.25: right arm swings inward +0.26 m from y=-0.51
+      cube_C (green) at centre: stacking target, reachable by either arm
+    -->
+
+    <!-- cube_A — red — left arm grasp target -->
+    <body name="cube_A" pos="0.35 0.25 1.12">
+      <freejoint name="cube_A_joint"/>
+      <geom name="cube_A_geom" type="box" size="0.02 0.02 0.02"
+            material="cube_red"
+            mass="0.032"
+            friction="1.5 0.005 0.005"
+            contype="1" conaffinity="1"
+            condim="4"
+            solref="0.008 1"
+            solimp="0.99 0.999 0.001"/>
+    </body>
+
+    <!-- cube_B — blue — right arm grasp target -->
+    <body name="cube_B" pos="0.35 -0.25 1.12">
+      <freejoint name="cube_B_joint"/>
+      <geom name="cube_B_geom" type="box" size="0.02 0.02 0.02"
+            material="cube_blue"
+            mass="0.032"
+            friction="1.5 0.005 0.005"
+            contype="1" conaffinity="1"
+            condim="4"
+            solref="0.008 1"
+            solimp="0.99 0.999 0.001"/>
+    </body>
+
+    <!-- cube_C — green — stacking target (centre far) -->
+    <body name="cube_C" pos="0.50 0.00 1.12">
+      <freejoint name="cube_C_joint"/>
+      <geom name="cube_C_geom" type="box" size="0.02 0.02 0.02"
+            material="cube_green"
+            mass="0.032"
+            friction="1.5 0.005 0.005"
+            contype="1" conaffinity="1"
+            condim="4"
+            solref="0.008 1"
+            solimp="0.99 0.999 0.001"/>
+    </body>
+  </worldbody>
+
+  <!-- ── Contact exclusions ────────────────────────────────────────────────── -->
+  <!--
+    Arm links (body + link0-8, hand) are excluded from colliding with the table
+    and the robot pedestal.  This prevents the kinematic arm from registering
+    spurious contact forces with the furniture when it passes nearby.
+
+    Fingers (openarm_*_right_finger, openarm_*_left_finger) are NOT excluded —
+    they still interact with cubes and table surface for grasping.
+  -->
+  <contact>
+    <!-- Left arm links vs table -->
+    <exclude body1="table" body2="openarm_body_link0"/>
+    <exclude body1="table" body2="openarm_left_link0"/>
+    <exclude body1="table" body2="openarm_left_link1"/>
+    <exclude body1="table" body2="openarm_left_link2"/>
+    <exclude body1="table" body2="openarm_left_link3"/>
+    <exclude body1="table" body2="openarm_left_link4"/>
+    <exclude body1="table" body2="openarm_left_link5"/>
+    <exclude body1="table" body2="openarm_left_link6"/>
+    <exclude body1="table" body2="openarm_left_link7"/>
+    <exclude body1="table" body2="openarm_left_link8"/>
+    <exclude body1="table" body2="openarm_left_hand"/>
+    <!-- Right arm links vs table -->
+    <exclude body1="table" body2="openarm_right_link0"/>
+    <exclude body1="table" body2="openarm_right_link1"/>
+    <exclude body1="table" body2="openarm_right_link2"/>
+    <exclude body1="table" body2="openarm_right_link3"/>
+    <exclude body1="table" body2="openarm_right_link4"/>
+    <exclude body1="table" body2="openarm_right_link5"/>
+    <exclude body1="table" body2="openarm_right_link6"/>
+    <exclude body1="table" body2="openarm_right_link7"/>
+    <exclude body1="table" body2="openarm_right_link8"/>
+    <exclude body1="table" body2="openarm_right_hand"/>
+    <!-- Arm links vs pedestal (arm base passes through pedestal visually) -->
+    <exclude body1="robot_pedestal" body2="openarm_body_link0"/>
+    <exclude body1="robot_pedestal" body2="openarm_left_link0"/>
+    <exclude body1="robot_pedestal" body2="openarm_right_link0"/>
+  </contact>
+</mujoco>

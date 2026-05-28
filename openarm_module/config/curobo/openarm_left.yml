@@ -1,0 +1,31 @@
+##
+## cuRobo robot config for OpenArm left arm
+## End-effector: openarm_left_hand_tcp
+##
+robot_cfg:
+  kinematics:
+    use_usd_kinematics: False
+    urdf_path: "/home/vision/humanoids/openarm/urdf/openarm_bimanual.urdf"
+    asset_root_path: "/home/vision/humanoids/openarm/urdf"
+    base_link: "openarm_left_link0"
+    ee_link: "openarm_left_hand_tcp"
+    link_names: null
+    collision_link_names: null
+    collision_spheres: null
+    mesh_link_names: null
+    lock_joints: null
+    cspace:
+      joint_names:
+        - "openarm_left_joint1"
+        - "openarm_left_joint2"
+        - "openarm_left_joint3"
+        - "openarm_left_joint4"
+        - "openarm_left_joint5"
+        - "openarm_left_joint6"
+        - "openarm_left_joint7"
+      retract_config: [0.0, -1.5708, 0.0, 1.2217, 0.0, 0.0, 0.0]
+      null_space_weight: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+      cspace_distance_weight: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+      max_jerk: 500.0
+      max_acceleration: 12.0
+      position_limit_clip: 0.01

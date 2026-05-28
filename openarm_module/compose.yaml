@@ -1,0 +1,20 @@
+name: openarm
+services:
+  openarm:
+    container_name: openarm
+    image: ghcr.io/ad-sdl/openarm_module
+    network_mode: host
+    environment:
+      - USER_ID=${USER_ID:-1000}
+      - GROUP_ID=${GROUP_ID:-1000}
+      - openarm_right_can_id=0
+      - openarm_left_can_id=1
+    build:
+      context: .
+      dockerfile: Dockerfile
+      tags:
+        - ghcr.io/ad-sdl/openarm_module:latest
+        - ghcr.io/ad-sdl/openarm_module:dev
+    command: python -m openarm_rest_node --node_definition definitions/openarm.node.yaml
+    volumes:
+      - ./definitions:/home/madsci/definitions/

@@ -1,0 +1,430 @@
+#!/usr/bin/env python3
+"""
+LeRobot dataset recorder for bimanual OpenArm VR teleop.
+
+Records at --fps Hz:
+  observation.state            16 joint positions from /joint_states
+  action                       16 joint commands  from /joint_trajectory
+  observation.images.head      1280x720 rgb8 from /camera/head/image_raw
+  observation.images.left_wrist   640x480 rgb8
+  observation.images.right_wrist  640x480 rgb8
+
+Optionally records a parallel right-arm-only dataset at the same time
+(--repo-id-right): 8 joints + head + right_wrist only.
+
+Usage:
+    source ~/lerobot/.venv/bin/activate
+    source /opt/ros/jazzy/setup.bash
+    source ~/OPEN_ARM/packages/install/setup.bash
+    cd ~/OPEN_ARM/teleop_xr
+
+    python scripts/lerobot_recorder.py \\
+        --repo-id YOUR_HF_USERNAME/openarm-bimanual \\
+        --repo-id-right YOUR_HF_USERNAME/openarm-right-only \\
+        --fps 30 \\
+        --root ~/lerobot_datasets \\
+        --push-to-hub
+
+Requirements:
+  - Teleop stack running (openarm.bimanual.launch.py + joint_trajectory_relay.py)
+  - demo_with_ros2.py running with Quest connected (for camera topics to be active)
+  - HF auth: run 'hf auth login' first if not already done
+"""
+
+from __future__ import annotations
+
+import argparse
+import threading
+import time
+from pathlib import Path
+
+import numpy as np
+import rclpy
+from rclpy.node import Node
+from sensor_msgs.msg import Image, JointState
+from std_msgs.msg import Bool
+from trajectory_msgs.msg import JointTrajectory
+
+from lerobot.datasets.lerobot_dataset import LeRobotDataset
+
+
+# Joint names in the order they appear in /joint_states and /joint_trajectory.
+# Must match the relay's split order (left 1-7, right 1-7, left finger, right finger).
+JOINT_NAMES: list[str] = [
+    "openarm_left_joint1",  "openarm_left_joint2",  "openarm_left_joint3",
+    "openarm_left_joint4",  "openarm_left_joint5",  "openarm_left_joint6",
+    "openarm_left_joint7",
+    "openarm_right_joint1", "openarm_right_joint2", "openarm_right_joint3",
+    "openarm_right_joint4", "openarm_right_joint5", "openarm_right_joint6",
+    "openarm_right_joint7",
+    "openarm_left_finger_joint1",
+    "openarm_right_finger_joint1",
+]
+N_JOINTS = len(JOINT_NAMES)
+
+# Right-arm-only subset (8 joints: joints 1-7 + right finger)
+RIGHT_JOINT_NAMES: list[str] = [
+    "openarm_right_joint1", "openarm_right_joint2", "openarm_right_joint3",
+    "openarm_right_joint4", "openarm_right_joint5", "openarm_right_joint6",
+    "openarm_right_joint7",
+    "openarm_right_finger_joint1",
+]
+N_RIGHT_JOINTS = len(RIGHT_JOINT_NAMES)
+# Integer indices into JOINT_NAMES — used to slice state/action arrays
+_RIGHT_IDX = [JOINT_NAMES.index(n) for n in RIGHT_JOINT_NAMES]
+
+IMG_H, IMG_W = 480, 640
+HEAD_H, HEAD_W = 720, 1280
+
+
+# ---------------------------------------------------------------------------
+
+class OpenArmRecorder(Node):
+    def __init__(
+        self,
+        dataset: LeRobotDataset,
+        fps: int,
+        dataset_right: LeRobotDataset | None = None,
+    ):
+        super().__init__("lerobot_recorder")
+        self._dataset = dataset
+        self._dataset_right = dataset_right
+        self._fps = fps
+
+        # Latest sensor data (written by subscriber callbacks, read by timer)
+        self._state: np.ndarray | None = None
+        self._action: np.ndarray | None = None
+        self._images: dict[str, np.ndarray | None] = {
+            "head": None, "left_wrist": None, "right_wrist": None}
+
+        # Episode control
+        self._recording = False
+        self._task = ""
+        self._frame_count = 0
+        self._episode_count = 0
+        self._episode_lock = threading.Lock()
+        # Serializes add_frame vs save_episode — save_episode mutates
+        # episode_buffer["episode_index"] from int→array (line 242 in
+        # dataset_writer.py); a concurrent add_frame then formats that
+        # array as "%06d" and crashes.
+        self._add_frame_lock = threading.Lock()
+
+        # Subscribers
+        self.create_subscription(
+            JointState, "/joint_states", self._cb_state, 10)
+        self.create_subscription(
+            JointTrajectory, "/joint_trajectory", self._cb_action, 10)
+        for key, topic in [
+            ("head",        "/camera/head/image_raw"),
+            ("left_wrist",  "/camera/left_wrist/image_raw"),
+            ("right_wrist", "/camera/right_wrist/image_raw"),
+        ]:
+            self.create_subscription(
+                Image, topic,
+                lambda msg, k=key: self._cb_image(msg, k), 10)
+
+        self._reset_pub = self.create_publisher(Bool, '/teleop_xr/reset', 1)
+
+        self.create_timer(1.0 / fps, self._tick)
+        extra = " + right-only parallel dataset" if dataset_right else ""
+        self.get_logger().info(
+            f"Recorder ready: {fps} fps | {N_JOINTS} joints | 3 cameras{extra}")
+
+    def send_reset(self) -> None:
+        """Tell demo_with_ros2 to move both arms to their default start pose."""
+        self._reset_pub.publish(Bool(data=True))
+
+    # ── ROS2 callbacks (spin thread) ─────────────────────────────────────────
+
+    def _cb_state(self, msg: JointState) -> None:
+        lookup = {n: p for n, p in zip(msg.name, msg.position)}
+        self._state = np.array(
+            [lookup.get(n, 0.0) for n in JOINT_NAMES], dtype=np.float32)
+
+    def _cb_action(self, msg: JointTrajectory) -> None:
+        if not msg.points:
+            return
+        lookup = {n: p for n, p in zip(msg.joint_names, msg.points[0].positions)}
+        self._action = np.array(
+            [lookup.get(n, 0.0) for n in JOINT_NAMES], dtype=np.float32)
+
+    def _cb_image(self, msg: Image, key: str) -> None:
+        # Direct numpy conversion — avoids cv_bridge numpy ABI issue
+        self._images[key] = (
+            np.frombuffer(msg.data, dtype=np.uint8)
+            .reshape(msg.height, msg.width, 3)
+            .copy()
+        )
+
+    # ── Timer (spin thread) ──────────────────────────────────────────────────
+
+    def _tick(self) -> None:
+        if not self._recording:
+            return
+        with self._episode_lock:
+            if not self._recording:
+                return
+            if (self._state is None or self._action is None or
+                    any(v is None for v in self._images.values())):
+                return
+            # Snapshot all sensor data once under the lock
+            state   = self._state.copy()
+            action  = self._action.copy()
+            head    = self._images["head"].copy()
+            l_wrist = self._images["left_wrist"].copy()
+            r_wrist = self._images["right_wrist"].copy()
+            task    = self._task
+
+        frame = {
+            "observation.state":              state,
+            "action":                         action,
+            "observation.images.head":        head,
+            "observation.images.left_wrist":  l_wrist,
+            "observation.images.right_wrist": r_wrist,
+            "task":                           task,
+        }
+        # Right-only frame reuses the already-copied head/r_wrist arrays;
+        # fancy indexing on state/action always returns a new copy.
+        frame_right = {
+            "observation.state":              state[_RIGHT_IDX],
+            "action":                         action[_RIGHT_IDX],
+            "observation.images.head":        head,
+            "observation.images.right_wrist": r_wrist,
+            "task":                           task,
+        } if self._dataset_right is not None else None
+
+        with self._add_frame_lock:
+            self._dataset.add_frame(frame)
+            if frame_right is not None:
+                self._dataset_right.add_frame(frame_right)
+        self._frame_count += 1
+
+    # ── Episode control (main thread) ────────────────────────────────────────
+
+    def start_episode(self, task: str) -> None:
+        self._task = task
+        self._frame_count = 0
+        self._recording = True
+        self.get_logger().info(
+            f"▶ Recording episode {self._episode_count + 1}: '{task}'")
+
+    def stop_episode(self) -> int:
+        """Stop recording and save the episode. Returns frame count."""
+        with self._episode_lock:
+            self._recording = False
+            n = self._frame_count
+
+        # Wait for any add_frame already past the recording check to finish
+        # before save_episode mutates episode_buffer["episode_index"] int→array.
+        with self._add_frame_lock:
+            pass
+
+        if n == 0:
+            self.get_logger().warning("No frames recorded — episode discarded.")
+            return 0
+
+        self._dataset.save_episode(parallel_encoding=True)
+        if self._dataset_right is not None:
+            self._dataset_right.save_episode(parallel_encoding=True)
+        self._episode_count += 1
+        self.get_logger().info(
+            f"✅ Saved episode {self._episode_count}: "
+            f"{n} frames ({n / self._fps:.1f}s) | task: '{self._task}'"
+        )
+        return n
+
+    def data_ready(self) -> bool:
+        return (self._state is not None and
+                self._action is not None and
+                all(v is not None for v in self._images.values()))
+
+
+# ---------------------------------------------------------------------------
+
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        description="Record LeRobot episodes from bimanual OpenArm VR teleop")
+    parser.add_argument(
+        "--repo-id", required=True,
+        help="HuggingFace repo id for the full bimanual dataset")
+    parser.add_argument(
+        "--repo-id-right", default=None,
+        help="(Optional) repo id for a parallel right-arm-only dataset "
+             "(8 joints + head + right_wrist). Recorded simultaneously.")
+    parser.add_argument("--fps", type=int, default=30)
+    parser.add_argument(
+        "--root", default=None,
+        help="Base directory for datasets (default: ~/lerobot_datasets). "
+             "The dataset is stored at <root>/<repo_id>/.")
+    parser.add_argument(
+        "--task", default="pick up cube and place in box",
+        help="Default task description (press ENTER each episode to reuse)")
+    parser.add_argument(
+        "--push-to-hub", action="store_true", default=False,
+        help="Push to HuggingFace Hub automatically after quitting")
+    args = parser.parse_args()
+
+    # lerobot uses root as the exact dataset directory (not a parent).
+    # We construct root = base / repo_id so each dataset gets its own dir.
+    base = Path(args.root) if args.root else Path.home() / "lerobot_datasets"
+    root = base / args.repo_id
+    root.parent.mkdir(parents=True, exist_ok=True)
+
+    features = {
+        "observation.state": {
+            "dtype": "float32",
+            "shape": (N_JOINTS,),
+            "names": JOINT_NAMES,
+        },
+        "action": {
+            "dtype": "float32",
+            "shape": (N_JOINTS,),
+            "names": JOINT_NAMES,
+        },
+        "observation.images.head": {
+            "dtype": "video",
+            "shape": (HEAD_H, HEAD_W, 3),
+            "names": ["height", "width", "channel"],
+        },
+        "observation.images.left_wrist": {
+            "dtype": "video",
+            "shape": (IMG_H, IMG_W, 3),
+            "names": ["height", "width", "channel"],
+        },
+        "observation.images.right_wrist": {
+            "dtype": "video",
+            "shape": (IMG_H, IMG_W, 3),
+            "names": ["height", "width", "channel"],
+        },
+    }
+
+    features_right = {
+        "observation.state": {
+            "dtype": "float32",
+            "shape": (N_RIGHT_JOINTS,),
+            "names": RIGHT_JOINT_NAMES,
+        },
+        "action": {
+            "dtype": "float32",
+            "shape": (N_RIGHT_JOINTS,),
+            "names": RIGHT_JOINT_NAMES,
+        },
+        "observation.images.head": {
+            "dtype": "video",
+            "shape": (HEAD_H, HEAD_W, 3),
+            "names": ["height", "width", "channel"],
+        },
+        "observation.images.right_wrist": {
+            "dtype": "video",
+            "shape": (IMG_H, IMG_W, 3),
+            "names": ["height", "width", "channel"],
+        },
+    }
+
+    print(f"\nCreating dataset  : {args.repo_id}")
+    print(f"Local root        : {root}")
+    print(f"FPS               : {args.fps}")
+    print(f"(delete {root} to start fresh on re-run)")
+    dataset = LeRobotDataset.create(
+        repo_id=args.repo_id,
+        fps=args.fps,
+        features=features,
+        root=str(root),
+        robot_type="bimanual_openarm",
+    )
+
+    dataset_right = None
+    if args.repo_id_right:
+        root_right = base / args.repo_id_right
+        root_right.parent.mkdir(parents=True, exist_ok=True)
+        print(f"\nCreating right-only dataset: {args.repo_id_right}")
+        print(f"Local root                 : {root_right}")
+        print(f"(delete {root_right} to start fresh on re-run)")
+        dataset_right = LeRobotDataset.create(
+            repo_id=args.repo_id_right,
+            fps=args.fps,
+            features=features_right,
+            root=str(root_right),
+            robot_type="openarm_right",
+        )
+
+    rclpy.init()
+    recorder = OpenArmRecorder(dataset, args.fps, dataset_right=dataset_right)
+
+    spin_thread = threading.Thread(
+        target=rclpy.spin, args=(recorder,), daemon=True)
+    spin_thread.start()
+
+    print("\n=== OpenArm LeRobot Recorder ===")
+    print("Prereqs: teleop stack + Quest connected (cameras must be active)\n")
+
+    # Wait until at least one joint-state message has arrived
+    print("Waiting for sensor data", end="", flush=True)
+    while not recorder.data_ready():
+        time.sleep(0.2)
+        print(".", end="", flush=True)
+    print(" ready!\n")
+
+    last_task = args.task
+    try:
+        while True:
+            task = input(
+                f"Task description [{last_task}] (or 'quit' to exit): ").strip()
+            if task.lower() in ("quit", "q", "exit"):
+                break
+            if task == "":
+                task = last_task
+            else:
+                last_task = task
+
+            print(f"\n  Task : '{task}'")
+            input("  Press ENTER to START recording...")
+            recorder.start_episode(task)
+
+            input("  [recording...] Press ENTER to STOP and SAVE...")
+            n = recorder.stop_episode()
+            if n > 0:
+                print(f"  Saved {n} frames ({n / args.fps:.1f}s)")
+                cmd = input("  Reset robot to start pose? [r + ENTER / ENTER to skip]: ").strip().lower()
+                if cmd == 'r':
+                    recorder.send_reset()
+                    print("  ↺ Reset sent — robot moving to start pose\n")
+                else:
+                    print()
+
+    except KeyboardInterrupt:
+        print("\n\nInterrupted — saving any open episode...")
+        if recorder._recording:
+            recorder.stop_episode()
+
+    finally:
+        recorder.destroy_node()
+        rclpy.shutdown()
+        spin_thread.join(timeout=2.0)
+
+    total = recorder._episode_count
+    print(f"\nTotal episodes recorded: {total}")
+
+    if total == 0:
+        return
+
+    if args.push_to_hub:
+        print(f"Pushing {args.repo_id} to HuggingFace Hub...")
+        dataset.push_to_hub()
+        print(f"Done: https://huggingface.co/datasets/{args.repo_id}")
+        if dataset_right is not None:
+            print(f"Pushing {args.repo_id_right} to HuggingFace Hub...")
+            dataset_right.push_to_hub()
+            print(f"Done: https://huggingface.co/datasets/{args.repo_id_right}")
+    else:
+        print(f"\nTo push to Hub later:")
+        print(f"  python -c \"from lerobot.datasets.lerobot_dataset import LeRobotDataset; "
+              f"d = LeRobotDataset('{args.repo_id}', root='{root}'); d.push_to_hub()\"")
+        if dataset_right is not None:
+            root_right = base / args.repo_id_right
+            print(f"  python -c \"from lerobot.datasets.lerobot_dataset import LeRobotDataset; "
+                  f"d = LeRobotDataset('{args.repo_id_right}', root='{root_right}'); d.push_to_hub()\"")
+
+
+if __name__ == "__main__":
+    main()

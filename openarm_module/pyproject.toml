@@ -1,0 +1,33 @@
+[project]
+name = "openarm_module"
+version = "1.0.0"
+description = "OpenArm robot module for AD-SDL automation with LeRobot integration"
+authors = [
+    {name = "Doga Ozgulbas", email="dozgulbas@anl.gov"},
+]
+dependencies = [
+    "openarm-can>=1.2.8",
+    "python-can>=4.2.0,<5.0.0",
+    "pygame>=2.5.1,<2.7.0",
+    "hidapi>=0.14.0,<0.15.0",
+    "madsci-node-module~=0.6.1",
+    "madsci-client~=0.6.1",
+    "madsci-common~=0.6.1",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.urls]
+homepage = "https://github.com/AD-SDL/openarm_module"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "ruff>=0.12.0",
+    "pre-commit>=4.3.0",
+]
+
+[build-system]
+requires = ["setuptools>=71.0.0", "wheel"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,3701 @@
+============================================================
+JOINT4 TRACE: Monitoring IK output → Isaac Sim feedback
+============================================================
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+
+[0001] IK OUTPUT:
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0918 rad
+[0002] IK OUTPUT:
+       left_joint4:   -0.0735 rad
+       right_joint4:  -0.0875 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0735 rad
+       right_joint4:  -0.0875 rad
+
+[0003] IK OUTPUT:
+       left_joint4:   -0.0736 rad
+       right_joint4:  -0.0867 rad
+[0004] IK OUTPUT:
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0867 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0867 rad
+
+[0005] IK OUTPUT:
+       left_joint4:   -0.0740 rad
+       right_joint4:  -0.0866 rad
+[0006] IK OUTPUT:
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0867 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0867 rad
+
+[0007] IK OUTPUT:
+       left_joint4:   -0.0744 rad
+       right_joint4:  -0.0867 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0744 rad
+       right_joint4:  -0.0867 rad
+
+[0008] IK OUTPUT:
+       left_joint4:   -0.0746 rad
+       right_joint4:  -0.0868 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0746 rad
+       right_joint4:  -0.0868 rad
+
+[0009] IK OUTPUT:
+       left_joint4:   -0.0748 rad
+       right_joint4:  -0.0869 rad
+[0010] IK OUTPUT:
+       left_joint4:   -0.0749 rad
+       right_joint4:  -0.0870 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0748 rad
+       right_joint4:  -0.0869 rad
+
+[0011] IK OUTPUT:
+       left_joint4:   -0.0750 rad
+       right_joint4:  -0.0873 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0750 rad
+       right_joint4:  -0.0873 rad
+
+[0012] IK OUTPUT:
+       left_joint4:   -0.0751 rad
+       right_joint4:  -0.0876 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0751 rad
+       right_joint4:  -0.0876 rad
+
+[0013] IK OUTPUT:
+       left_joint4:   -0.0751 rad
+       right_joint4:  -0.0878 rad
+[0014] IK OUTPUT:
+       left_joint4:   -0.0751 rad
+       right_joint4:  -0.0880 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0751 rad
+       right_joint4:  -0.0878 rad
+
+[0015] IK OUTPUT:
+       left_joint4:   -0.0751 rad
+       right_joint4:  -0.0883 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0751 rad
+       right_joint4:  -0.0883 rad
+
+[0016] IK OUTPUT:
+       left_joint4:   -0.0751 rad
+       right_joint4:  -0.0886 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0751 rad
+       right_joint4:  -0.0886 rad
+
+[0017] IK OUTPUT:
+       left_joint4:   -0.0751 rad
+       right_joint4:  -0.0888 rad
+[0018] IK OUTPUT:
+       left_joint4:   -0.0751 rad
+       right_joint4:  -0.0889 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0751 rad
+       right_joint4:  -0.0888 rad
+
+[0019] IK OUTPUT:
+       left_joint4:   -0.0751 rad
+       right_joint4:  -0.0892 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0751 rad
+       right_joint4:  -0.0892 rad
+
+[0020] IK OUTPUT:
+       left_joint4:   -0.0723 rad
+       right_joint4:  -0.0817 rad
+[0021] IK OUTPUT:
+       left_joint4:   -0.0751 rad
+       right_joint4:  -0.0896 rad
+[0022] IK OUTPUT:
+       left_joint4:   -0.0750 rad
+       right_joint4:  -0.0896 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0750 rad
+       right_joint4:  -0.0896 rad
+
+[0023] IK OUTPUT:
+       left_joint4:   -0.0750 rad
+       right_joint4:  -0.0897 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0750 rad
+       right_joint4:  -0.0897 rad
+
+[0024] IK OUTPUT:
+       left_joint4:   -0.0748 rad
+       right_joint4:  -0.0899 rad
+[0025] IK OUTPUT:
+       left_joint4:   -0.0747 rad
+       right_joint4:  -0.0900 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0747 rad
+       right_joint4:  -0.0900 rad
+
+[0026] IK OUTPUT:
+       left_joint4:   -0.0745 rad
+       right_joint4:  -0.0902 rad
+[0027] IK OUTPUT:
+       left_joint4:   -0.0744 rad
+       right_joint4:  -0.0904 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0744 rad
+       right_joint4:  -0.0904 rad
+
+[0028] IK OUTPUT:
+       left_joint4:   -0.0715 rad
+       right_joint4:  -0.0831 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0715 rad
+       right_joint4:  -0.0831 rad
+
+[0029] IK OUTPUT:
+       left_joint4:   -0.0741 rad
+       right_joint4:  -0.0908 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0741 rad
+       right_joint4:  -0.0908 rad
+
+[0030] IK OUTPUT:
+       left_joint4:   -0.0739 rad
+       right_joint4:  -0.0909 rad
+[0031] IK OUTPUT:
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0911 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0911 rad
+
+[0032] IK OUTPUT:
+       left_joint4:   -0.0736 rad
+       right_joint4:  -0.0912 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0736 rad
+       right_joint4:  -0.0912 rad
+
+[0033] IK OUTPUT:
+       left_joint4:   -0.0735 rad
+       right_joint4:  -0.0914 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0735 rad
+       right_joint4:  -0.0914 rad
+
+[0034] IK OUTPUT:
+       left_joint4:   -0.0734 rad
+       right_joint4:  -0.0916 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0734 rad
+       right_joint4:  -0.0916 rad
+
+[0035] IK OUTPUT:
+       left_joint4:   -0.0732 rad
+       right_joint4:  -0.0918 rad
+[0036] IK OUTPUT:
+       left_joint4:   -0.0731 rad
+       right_joint4:  -0.0916 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0731 rad
+       right_joint4:  -0.0916 rad
+
+[0037] IK OUTPUT:
+       left_joint4:   -0.0731 rad
+       right_joint4:  -0.0916 rad
+[0038] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0844 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0844 rad
+
+[0039] IK OUTPUT:
+       left_joint4:   -0.0729 rad
+       right_joint4:  -0.0913 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0729 rad
+       right_joint4:  -0.0913 rad
+
+[0040] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0840 rad
+[0041] IK OUTPUT:
+       left_joint4:   -0.0728 rad
+       right_joint4:  -0.0909 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0840 rad
+
+[0042] IK OUTPUT:
+       left_joint4:   -0.0727 rad
+       right_joint4:  -0.0906 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0727 rad
+       right_joint4:  -0.0906 rad
+
+[0043] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0837 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0837 rad
+
+[0044] IK OUTPUT:
+       left_joint4:   -0.0727 rad
+       right_joint4:  -0.0905 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0727 rad
+       right_joint4:  -0.0905 rad
+
+[0045] IK OUTPUT:
+       left_joint4:   -0.0728 rad
+       right_joint4:  -0.0904 rad
+[0046] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0833 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0833 rad
+
+[0047] IK OUTPUT:
+       left_joint4:   -0.0728 rad
+       right_joint4:  -0.0902 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0728 rad
+       right_joint4:  -0.0902 rad
+
+[0048] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0831 rad
+[0049] IK OUTPUT:
+       left_joint4:   -0.0729 rad
+       right_joint4:  -0.0901 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0831 rad
+
+[0050] IK OUTPUT:
+       left_joint4:   -0.0729 rad
+       right_joint4:  -0.0900 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0729 rad
+       right_joint4:  -0.0900 rad
+
+[0051] IK OUTPUT:
+       left_joint4:   -0.0729 rad
+       right_joint4:  -0.0899 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0729 rad
+       right_joint4:  -0.0899 rad
+
+[0052] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0828 rad
+[0053] IK OUTPUT:
+       left_joint4:   -0.0729 rad
+       right_joint4:  -0.0897 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0729 rad
+       right_joint4:  -0.0897 rad
+
+[0054] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0826 rad
+[0055] IK OUTPUT:
+       left_joint4:   -0.0728 rad
+       right_joint4:  -0.0895 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0728 rad
+       right_joint4:  -0.0895 rad
+
+[0056] IK OUTPUT:
+       left_joint4:   -0.0728 rad
+       right_joint4:  -0.0897 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0728 rad
+       right_joint4:  -0.0897 rad
+
+[0057] IK OUTPUT:
+       left_joint4:   -0.0727 rad
+       right_joint4:  -0.0898 rad
+[0058] IK OUTPUT:
+       left_joint4:   -0.0726 rad
+       right_joint4:  -0.0895 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0727 rad
+       right_joint4:  -0.0898 rad
+
+[0059] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0817 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0817 rad
+
+[0060] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0815 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0815 rad
+
+[0061] IK OUTPUT:
+       left_joint4:   -0.0724 rad
+       right_joint4:  -0.0900 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0724 rad
+       right_joint4:  -0.0900 rad
+
+[0062] IK OUTPUT:
+       left_joint4:   -0.0724 rad
+       right_joint4:  -0.0888 rad
+[0063] IK OUTPUT:
+       left_joint4:   -0.0723 rad
+       right_joint4:  -0.0887 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0723 rad
+       right_joint4:  -0.0887 rad
+
+[0064] IK OUTPUT:
+       left_joint4:   -0.0723 rad
+       right_joint4:  -0.0880 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0723 rad
+       right_joint4:  -0.0880 rad
+
+[0065] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0824 rad
+[0066] IK OUTPUT:
+       left_joint4:   -0.0723 rad
+       right_joint4:  -0.0887 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0824 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0723 rad
+       right_joint4:  -0.0887 rad
+
+[0067] IK OUTPUT:
+       left_joint4:   -0.0724 rad
+       right_joint4:  -0.0886 rad
+[0068] IK OUTPUT:
+       left_joint4:   -0.0725 rad
+       right_joint4:  -0.0892 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0725 rad
+       right_joint4:  -0.0892 rad
+
+[0069] IK OUTPUT:
+       left_joint4:   -0.0726 rad
+       right_joint4:  -0.0894 rad
+[0070] IK OUTPUT:
+       left_joint4:   -0.0727 rad
+       right_joint4:  -0.0896 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0726 rad
+       right_joint4:  -0.0894 rad
+
+[0071] IK OUTPUT:
+       left_joint4:   -0.0728 rad
+       right_joint4:  -0.0896 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0727 rad
+       right_joint4:  -0.0896 rad
+
+[0072] IK OUTPUT:
+       left_joint4:   -0.0730 rad
+       right_joint4:  -0.0898 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0730 rad
+       right_joint4:  -0.0898 rad
+
+[0073] IK OUTPUT:
+       left_joint4:   -0.0731 rad
+       right_joint4:  -0.0899 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0731 rad
+       right_joint4:  -0.0899 rad
+
+[0074] IK OUTPUT:
+       left_joint4:   -0.0732 rad
+       right_joint4:  -0.0900 rad
+[0075] IK OUTPUT:
+       left_joint4:   -0.0733 rad
+       right_joint4:  -0.0901 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0733 rad
+       right_joint4:  -0.0901 rad
+
+[0076] IK OUTPUT:
+       left_joint4:   -0.0734 rad
+       right_joint4:  -0.0902 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0734 rad
+       right_joint4:  -0.0902 rad
+
+[0077] IK OUTPUT:
+       left_joint4:   -0.0735 rad
+       right_joint4:  -0.0902 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0735 rad
+       right_joint4:  -0.0902 rad
+
+[0078] IK OUTPUT:
+       left_joint4:   -0.0736 rad
+       right_joint4:  -0.0902 rad
+[0079] IK OUTPUT:
+       left_joint4:   -0.0736 rad
+       right_joint4:  -0.0902 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0736 rad
+       right_joint4:  -0.0902 rad
+
+[0080] IK OUTPUT:
+       left_joint4:   -0.0735 rad
+       right_joint4:  -0.0901 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0735 rad
+       right_joint4:  -0.0901 rad
+
+[0081] IK OUTPUT:
+       left_joint4:   -0.0735 rad
+       right_joint4:  -0.0900 rad
+[0082] IK OUTPUT:
+       left_joint4:   -0.0734 rad
+       right_joint4:  -0.0899 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0735 rad
+       right_joint4:  -0.0900 rad
+
+[0083] IK OUTPUT:
+       left_joint4:   -0.0733 rad
+       right_joint4:  -0.0898 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0733 rad
+       right_joint4:  -0.0898 rad
+
+[0084] IK OUTPUT:
+       left_joint4:   -0.0732 rad
+       right_joint4:  -0.0896 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0732 rad
+       right_joint4:  -0.0896 rad
+
+[0085] IK OUTPUT:
+       left_joint4:   -0.0730 rad
+       right_joint4:  -0.0893 rad
+[0086] IK OUTPUT:
+       left_joint4:   -0.0729 rad
+       right_joint4:  -0.0891 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0729 rad
+       right_joint4:  -0.0891 rad
+
+[0087] IK OUTPUT:
+       left_joint4:   -0.0728 rad
+       right_joint4:  -0.0889 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0728 rad
+       right_joint4:  -0.0889 rad
+
+[0088] IK OUTPUT:
+       left_joint4:   -0.0727 rad
+       right_joint4:  -0.0888 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0727 rad
+       right_joint4:  -0.0888 rad
+
+[0089] IK OUTPUT:
+       left_joint4:   -0.0726 rad
+       right_joint4:  -0.0887 rad
+[0090] IK OUTPUT:
+       left_joint4:   -0.0725 rad
+       right_joint4:  -0.0886 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0725 rad
+       right_joint4:  -0.0886 rad
+
+[0091] IK OUTPUT:
+       left_joint4:   -0.0723 rad
+       right_joint4:  -0.0886 rad
+[0092] IK OUTPUT:
+       left_joint4:   -0.0722 rad
+       right_joint4:  -0.0887 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0723 rad
+       right_joint4:  -0.0886 rad
+
+[0093] IK OUTPUT:
+       left_joint4:   -0.0721 rad
+       right_joint4:  -0.0889 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0721 rad
+       right_joint4:  -0.0889 rad
+
+[0094] IK OUTPUT:
+       left_joint4:   -0.0694 rad
+       right_joint4:  -0.0839 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0694 rad
+       right_joint4:  -0.0839 rad
+
+[0095] IK OUTPUT:
+       left_joint4:   -0.0719 rad
+       right_joint4:  -0.0897 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0719 rad
+       right_joint4:  -0.0897 rad
+
+[0096] IK OUTPUT:
+       left_joint4:   -0.0719 rad
+       right_joint4:  -0.0900 rad
+[0097] IK OUTPUT:
+       left_joint4:   -0.0693 rad
+       right_joint4:  -0.0852 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0719 rad
+       right_joint4:  -0.0900 rad
+
+[0098] IK OUTPUT:
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.0908 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.0908 rad
+
+[0099] IK OUTPUT:
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.0863 rad
+[0100] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0924 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0924 rad
+
+[0101] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0930 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0930 rad
+
+[0102] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0937 rad
+[0103] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0944 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0944 rad
+
+[0104] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0951 rad
+[0105] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0957 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0957 rad
+
+[0106] IK OUTPUT:
+       left_joint4:   -0.0691 rad
+       right_joint4:  -0.0911 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0691 rad
+       right_joint4:  -0.0911 rad
+
+[0107] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0974 rad
+[0108] IK OUTPUT:
+       left_joint4:   -0.0691 rad
+       right_joint4:  -0.0923 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0974 rad
+
+[0109] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0980 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0691 rad
+       right_joint4:  -0.0923 rad
+
+[0110] IK OUTPUT:
+       left_joint4:   -0.0691 rad
+       right_joint4:  -0.0928 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0691 rad
+       right_joint4:  -0.0928 rad
+
+[0111] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0999 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0999 rad
+
+[0112] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0994 rad
+[0113] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0997 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0994 rad
+
+[0114] IK OUTPUT:
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.1000 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.1000 rad
+
+[0115] IK OUTPUT:
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.1002 rad
+[0116] IK OUTPUT:
+       left_joint4:   -0.0691 rad
+       right_joint4:  -0.0945 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0691 rad
+       right_joint4:  -0.0945 rad
+
+[0117] IK OUTPUT:
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.1011 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.1011 rad
+
+[0118] IK OUTPUT:
+       left_joint4:   -0.0691 rad
+       right_joint4:  -0.0950 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0691 rad
+       right_joint4:  -0.0950 rad
+
+[0119] IK OUTPUT:
+       left_joint4:   -0.0691 rad
+       right_joint4:  -0.0953 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0691 rad
+       right_joint4:  -0.0953 rad
+
+[0120] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.1017 rad
+[0121] IK OUTPUT:
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.0953 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.0953 rad
+
+[0122] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.1022 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.1022 rad
+
+[0123] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.1021 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.1021 rad
+
+[0124] IK OUTPUT:
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.0963 rad
+[0125] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.1009 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.0963 rad
+
+[0126] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.1007 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.1007 rad
+
+[0127] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0994 rad
+[0128] IK OUTPUT:
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.0983 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0994 rad
+
+[0129] IK OUTPUT:
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.0974 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.0974 rad
+
+[0130] IK OUTPUT:
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.0999 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.0999 rad
+
+[0131] IK OUTPUT:
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.0935 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.0935 rad
+
+[0132] IK OUTPUT:
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.1020 rad
+[0133] IK OUTPUT:
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.0943 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.0943 rad
+
+[0134] IK OUTPUT:
+       left_joint4:   -0.0691 rad
+       right_joint4:  -0.1000 rad
+[0135] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0976 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0691 rad
+       right_joint4:  -0.1000 rad
+
+[0136] IK OUTPUT:
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.0989 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.0989 rad
+
+[0137] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.1031 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.1031 rad
+
+[0138] IK OUTPUT:
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.0973 rad
+[0139] IK OUTPUT:
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.1037 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.1037 rad
+
+[0140] IK OUTPUT:
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.1040 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.1040 rad
+
+[0141] IK OUTPUT:
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.1035 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.1035 rad
+
+[0142] IK OUTPUT:
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.1024 rad
+[0143] IK OUTPUT:
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.1010 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.1024 rad
+
+[0144] IK OUTPUT:
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.0987 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.1010 rad
+
+[0145] IK OUTPUT:
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.0951 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.0951 rad
+
+[0146] IK OUTPUT:
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.1142 rad
+[0147] IK OUTPUT:
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.1196 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.1142 rad
+
+[0148] IK OUTPUT:
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.1274 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.1274 rad
+
+[0149] IK OUTPUT:
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.1359 rad
+[0150] IK OUTPUT:
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.0605 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.0605 rad
+
+[0151] IK OUTPUT:
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.1342 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.1342 rad
+
+[0152] IK OUTPUT:
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.0512 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.0512 rad
+
+[0153] IK OUTPUT:
+       left_joint4:   -0.0691 rad
+       right_joint4:  -0.1266 rad
+[0154] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0377 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0691 rad
+       right_joint4:  -0.1266 rad
+
+[0155] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0380 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0377 rad
+
+[0156] IK OUTPUT:
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.1043 rad
+[0157] IK OUTPUT:
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.0200 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.1043 rad
+
+[0158] IK OUTPUT:
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.0197 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.0197 rad
+
+[0159] IK OUTPUT:
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.0566 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.0566 rad
+
+[0160] IK OUTPUT:
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.0566 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.0566 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.0566 rad
+
+[0161] IK OUTPUT:
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.0566 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.0566 rad
+
+[0162] IK OUTPUT:
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.0566 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.0566 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.0566 rad
+
+[0163] IK OUTPUT:
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.0566 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.0566 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.0566 rad
+
+[0164] IK OUTPUT:
+       left_joint4:   -0.0709 rad
+       right_joint4:  -0.0116 rad
+[0165] IK OUTPUT:
+       left_joint4:   -0.0686 rad
+       right_joint4:  -0.0311 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0686 rad
+       right_joint4:  -0.0311 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0686 rad
+       right_joint4:  -0.0311 rad
+
+[0166] IK OUTPUT:
+       left_joint4:   -0.0709 rad
+       right_joint4:  -0.0183 rad
+[0167] IK OUTPUT:
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.0478 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0709 rad
+       right_joint4:  -0.0183 rad
+
+[0168] IK OUTPUT:
+       left_joint4:   -0.0709 rad
+       right_joint4:  -0.0270 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0709 rad
+       right_joint4:  -0.0270 rad
+
+[0169] IK OUTPUT:
+       left_joint4:   -0.0684 rad
+       right_joint4:  -0.1174 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0684 rad
+       right_joint4:  -0.1174 rad
+
+[0170] IK OUTPUT:
+       left_joint4:   -0.0684 rad
+       right_joint4:  -0.1181 rad
+[0171] IK OUTPUT:
+       left_joint4:   -0.0710 rad
+       right_joint4:  -0.0817 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0684 rad
+       right_joint4:  -0.1181 rad
+
+[0172] IK OUTPUT:
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.1180 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.1180 rad
+
+[0173] IK OUTPUT:
+       left_joint4:   -0.0710 rad
+       right_joint4:  -0.0819 rad
+[0174] IK OUTPUT:
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.1174 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.1174 rad
+
+[0175] IK OUTPUT:
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.1175 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.1175 rad
+
+[0176] IK OUTPUT:
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.1176 rad
+[0177] IK OUTPUT:
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.1176 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.1176 rad
+
+[0178] IK OUTPUT:
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.1173 rad
+[0179] IK OUTPUT:
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.1167 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.1167 rad
+
+[0180] IK OUTPUT:
+       left_joint4:   -0.0686 rad
+       right_joint4:  -0.1149 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0686 rad
+       right_joint4:  -0.1149 rad
+
+[0181] IK OUTPUT:
+       left_joint4:   -0.0711 rad
+       right_joint4:  -0.0903 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0711 rad
+       right_joint4:  -0.0903 rad
+
+[0182] IK OUTPUT:
+       left_joint4:   -0.0712 rad
+       right_joint4:  -0.0919 rad
+[0183] IK OUTPUT:
+       left_joint4:   -0.0687 rad
+       right_joint4:  -0.1036 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0712 rad
+       right_joint4:  -0.0919 rad
+
+[0184] IK OUTPUT:
+       left_joint4:   -0.0687 rad
+       right_joint4:  -0.1031 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0687 rad
+       right_joint4:  -0.1031 rad
+
+[0185] IK OUTPUT:
+       left_joint4:   -0.0688 rad
+       right_joint4:  -0.1026 rad
+[0186] IK OUTPUT:
+       left_joint4:   -0.0688 rad
+       right_joint4:  -0.1022 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0688 rad
+       right_joint4:  -0.1026 rad
+
+[0187] IK OUTPUT:
+       left_joint4:   -0.0688 rad
+       right_joint4:  -0.1018 rad
+[0188] IK OUTPUT:
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.0929 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0688 rad
+       right_joint4:  -0.1018 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.0929 rad
+
+[0189] IK OUTPUT:
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.1007 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.1007 rad
+
+[0190] IK OUTPUT:
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.1004 rad
+[0191] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0922 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.1004 rad
+
+[0192] IK OUTPUT:
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.0994 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.0994 rad
+
+[0193] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0917 rad
+[0194] IK OUTPUT:
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.0982 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0690 rad
+       right_joint4:  -0.0982 rad
+
+[0195] IK OUTPUT:
+       left_joint4:   -0.0689 rad
+       right_joint4:  -0.0980 rad
+[0196] IK OUTPUT:
+       left_joint4:   -0.0689 rad
+       right_joint4:  -0.0975 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0689 rad
+       right_joint4:  -0.0975 rad
+
+[0197] IK OUTPUT:
+       left_joint4:   -0.0689 rad
+       right_joint4:  -0.0970 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0689 rad
+       right_joint4:  -0.0970 rad
+
+[0198] IK OUTPUT:
+       left_joint4:   -0.0688 rad
+       right_joint4:  -0.0965 rad
+[0199] IK OUTPUT:
+       left_joint4:   -0.0688 rad
+       right_joint4:  -0.0959 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0688 rad
+       right_joint4:  -0.0965 rad
+
+[0200] IK OUTPUT:
+       left_joint4:   -0.0687 rad
+       right_joint4:  -0.0953 rad
+[0201] IK OUTPUT:
+       left_joint4:   -0.0713 rad
+       right_joint4:  -0.0882 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0713 rad
+       right_joint4:  -0.0882 rad
+
+[0202] IK OUTPUT:
+       left_joint4:   -0.0686 rad
+       right_joint4:  -0.0936 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0686 rad
+       right_joint4:  -0.0936 rad
+
+[0203] IK OUTPUT:
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.0934 rad
+[0204] IK OUTPUT:
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.0929 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.0929 rad
+
+[0205] IK OUTPUT:
+       left_joint4:   -0.0711 rad
+       right_joint4:  -0.0864 rad
+[0206] IK OUTPUT:
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.0918 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.0918 rad
+
+[0207] IK OUTPUT:
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.0915 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0685 rad
+       right_joint4:  -0.0915 rad
+
+[0208] IK OUTPUT:
+       left_joint4:   -0.0686 rad
+       right_joint4:  -0.0912 rad
+[0209] IK OUTPUT:
+       left_joint4:   -0.0686 rad
+       right_joint4:  -0.0908 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0686 rad
+       right_joint4:  -0.0908 rad
+
+[0210] IK OUTPUT:
+       left_joint4:   -0.0687 rad
+       right_joint4:  -0.0906 rad
+[0211] IK OUTPUT:
+       left_joint4:   -0.0688 rad
+       right_joint4:  -0.0903 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0687 rad
+       right_joint4:  -0.0906 rad
+
+[0212] IK OUTPUT:
+       left_joint4:   -0.0689 rad
+       right_joint4:  -0.0901 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0689 rad
+       right_joint4:  -0.0901 rad
+
+[0213] IK OUTPUT:
+       left_joint4:   -0.0691 rad
+       right_joint4:  -0.0899 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0691 rad
+       right_joint4:  -0.0899 rad
+
+[0214] IK OUTPUT:
+       left_joint4:   -0.0692 rad
+       right_joint4:  -0.0897 rad
+[0215] IK OUTPUT:
+       left_joint4:   -0.0694 rad
+       right_joint4:  -0.0896 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0694 rad
+       right_joint4:  -0.0896 rad
+
+[0216] IK OUTPUT:
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0894 rad
+[0217] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0892 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0892 rad
+
+[0218] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0891 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0891 rad
+
+[0219] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0890 rad
+[0220] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0889 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0889 rad
+
+[0221] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0888 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0888 rad
+
+[0222] IK OUTPUT:
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0887 rad
+[0223] IK OUTPUT:
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0886 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0886 rad
+
+[0224] IK OUTPUT:
+       left_joint4:   -0.0708 rad
+       right_joint4:  -0.0886 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0708 rad
+       right_joint4:  -0.0886 rad
+
+[0225] IK OUTPUT:
+       left_joint4:   -0.0709 rad
+       right_joint4:  -0.0885 rad
+[0226] IK OUTPUT:
+       left_joint4:   -0.0710 rad
+       right_joint4:  -0.0885 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0710 rad
+       right_joint4:  -0.0885 rad
+
+[0227] IK OUTPUT:
+       left_joint4:   -0.0712 rad
+       right_joint4:  -0.0884 rad
+[0228] IK OUTPUT:
+       left_joint4:   -0.0713 rad
+       right_joint4:  -0.0884 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0713 rad
+       right_joint4:  -0.0884 rad
+
+[0229] IK OUTPUT:
+       left_joint4:   -0.0714 rad
+       right_joint4:  -0.0883 rad
+[0230] IK OUTPUT:
+       left_joint4:   -0.0715 rad
+       right_joint4:  -0.0883 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0714 rad
+       right_joint4:  -0.0883 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0715 rad
+       right_joint4:  -0.0883 rad
+
+[0231] IK OUTPUT:
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.0883 rad
+[0232] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0883 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0883 rad
+
+[0233] IK OUTPUT:
+       left_joint4:   -0.0719 rad
+       right_joint4:  -0.0882 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0719 rad
+       right_joint4:  -0.0882 rad
+
+[0234] IK OUTPUT:
+       left_joint4:   -0.0720 rad
+       right_joint4:  -0.0882 rad
+[0235] IK OUTPUT:
+       left_joint4:   -0.0721 rad
+       right_joint4:  -0.0881 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0720 rad
+       right_joint4:  -0.0882 rad
+
+[0236] IK OUTPUT:
+       left_joint4:   -0.0722 rad
+       right_joint4:  -0.0881 rad
+[0237] IK OUTPUT:
+       left_joint4:   -0.0722 rad
+       right_joint4:  -0.0880 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0722 rad
+       right_joint4:  -0.0880 rad
+
+[0238] IK OUTPUT:
+       left_joint4:   -0.0723 rad
+       right_joint4:  -0.0880 rad
+[0239] IK OUTPUT:
+       left_joint4:   -0.0723 rad
+       right_joint4:  -0.0879 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0723 rad
+       right_joint4:  -0.0880 rad
+
+[0240] IK OUTPUT:
+       left_joint4:   -0.0724 rad
+       right_joint4:  -0.0879 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0724 rad
+       right_joint4:  -0.0879 rad
+
+[0241] IK OUTPUT:
+       left_joint4:   -0.0724 rad
+       right_joint4:  -0.0878 rad
+[0242] IK OUTPUT:
+       left_joint4:   -0.0725 rad
+       right_joint4:  -0.0878 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0724 rad
+       right_joint4:  -0.0878 rad
+
+[0243] IK OUTPUT:
+       left_joint4:   -0.0724 rad
+       right_joint4:  -0.0878 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0724 rad
+       right_joint4:  -0.0878 rad
+
+[0244] IK OUTPUT:
+       left_joint4:   -0.0725 rad
+       right_joint4:  -0.0877 rad
+[0245] IK OUTPUT:
+       left_joint4:   -0.0725 rad
+       right_joint4:  -0.0877 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0725 rad
+       right_joint4:  -0.0877 rad
+
+[0246] IK OUTPUT:
+       left_joint4:   -0.0726 rad
+       right_joint4:  -0.0877 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0726 rad
+       right_joint4:  -0.0877 rad
+
+[0247] IK OUTPUT:
+       left_joint4:   -0.0727 rad
+       right_joint4:  -0.0876 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0727 rad
+       right_joint4:  -0.0876 rad
+
+[0248] IK OUTPUT:
+       left_joint4:   -0.0727 rad
+       right_joint4:  -0.0876 rad
+[0249] IK OUTPUT:
+       left_joint4:   -0.0741 rad
+       right_joint4:  -0.0839 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0741 rad
+       right_joint4:  -0.0839 rad
+
+[0250] IK OUTPUT:
+       left_joint4:   -0.0727 rad
+       right_joint4:  -0.0875 rad
+[0251] IK OUTPUT:
+       left_joint4:   -0.0728 rad
+       right_joint4:  -0.0875 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0728 rad
+       right_joint4:  -0.0875 rad
+
+[0252] IK OUTPUT:
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0840 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0840 rad
+
+[0253] IK OUTPUT:
+       left_joint4:   -0.0729 rad
+       right_joint4:  -0.0875 rad
+[0254] IK OUTPUT:
+       left_joint4:   -0.0729 rad
+       right_joint4:  -0.0875 rad
+[0255] IK OUTPUT:
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0841 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0729 rad
+       right_joint4:  -0.0875 rad
+
+[0256] IK OUTPUT:
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0841 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0841 rad
+
+[0257] IK OUTPUT:
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0841 rad
+[0258] IK OUTPUT:
+       left_joint4:   -0.0731 rad
+       right_joint4:  -0.0874 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0731 rad
+       right_joint4:  -0.0874 rad
+
+[0259] IK OUTPUT:
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0842 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0842 rad
+
+[0260] IK OUTPUT:
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0843 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0843 rad
+
+[0261] IK OUTPUT:
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0843 rad
+[0262] IK OUTPUT:
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0844 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0844 rad
+
+[0263] IK OUTPUT:
+       left_joint4:   -0.0734 rad
+       right_joint4:  -0.0874 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0734 rad
+       right_joint4:  -0.0874 rad
+
+[0264] IK OUTPUT:
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0844 rad
+[0265] IK OUTPUT:
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0845 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0845 rad
+
+[0266] IK OUTPUT:
+       left_joint4:   -0.0735 rad
+       right_joint4:  -0.0873 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0735 rad
+       right_joint4:  -0.0873 rad
+
+[0267] IK OUTPUT:
+       left_joint4:   -0.0736 rad
+       right_joint4:  -0.0873 rad
+[0268] IK OUTPUT:
+       left_joint4:   -0.0737 rad
+       right_joint4:  -0.0873 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0737 rad
+       right_joint4:  -0.0873 rad
+
+[0269] IK OUTPUT:
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0873 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0738 rad
+       right_joint4:  -0.0873 rad
+
+[0270] IK OUTPUT:
+       left_joint4:   -0.0739 rad
+       right_joint4:  -0.0873 rad
+[0271] IK OUTPUT:
+       left_joint4:   -0.0740 rad
+       right_joint4:  -0.0873 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0739 rad
+       right_joint4:  -0.0873 rad
+
+[0272] IK OUTPUT:
+       left_joint4:   -0.0748 rad
+       right_joint4:  -0.0845 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0748 rad
+       right_joint4:  -0.0845 rad
+
+[0273] IK OUTPUT:
+       left_joint4:   -0.0746 rad
+       right_joint4:  -0.0872 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0746 rad
+       right_joint4:  -0.0872 rad
+
+[0274] IK OUTPUT:
+       left_joint4:   -0.0748 rad
+       right_joint4:  -0.0872 rad
+[0275] IK OUTPUT:
+       left_joint4:   -0.0750 rad
+       right_joint4:  -0.0871 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0748 rad
+       right_joint4:  -0.0872 rad
+
+[0276] IK OUTPUT:
+       left_joint4:   -0.0752 rad
+       right_joint4:  -0.0870 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0752 rad
+       right_joint4:  -0.0870 rad
+
+[0277] IK OUTPUT:
+       left_joint4:   -0.0754 rad
+       right_joint4:  -0.0870 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0754 rad
+       right_joint4:  -0.0870 rad
+
+[0278] IK OUTPUT:
+       left_joint4:   -0.0758 rad
+       right_joint4:  -0.0869 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0758 rad
+       right_joint4:  -0.0869 rad
+
+[0279] IK OUTPUT:
+       left_joint4:   -0.0765 rad
+       right_joint4:  -0.0842 rad
+[0280] IK OUTPUT:
+       left_joint4:   -0.0762 rad
+       right_joint4:  -0.0867 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0762 rad
+       right_joint4:  -0.0867 rad
+
+[0281] IK OUTPUT:
+       left_joint4:   -0.0766 rad
+       right_joint4:  -0.0866 rad
+[0282] IK OUTPUT:
+       left_joint4:   -0.0773 rad
+       right_joint4:  -0.0865 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0766 rad
+       right_joint4:  -0.0866 rad
+
+[0283] IK OUTPUT:
+       left_joint4:   -0.0778 rad
+       right_joint4:  -0.0864 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0778 rad
+       right_joint4:  -0.0864 rad
+
+[0284] IK OUTPUT:
+       left_joint4:   -0.0788 rad
+       right_joint4:  -0.0838 rad
+[0285] IK OUTPUT:
+       left_joint4:   -0.0792 rad
+       right_joint4:  -0.0838 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0792 rad
+       right_joint4:  -0.0838 rad
+
+[0286] IK OUTPUT:
+       left_joint4:   -0.0796 rad
+       right_joint4:  -0.0837 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0796 rad
+       right_joint4:  -0.0837 rad
+
+[0287] IK OUTPUT:
+       left_joint4:   -0.0796 rad
+       right_joint4:  -0.0860 rad
+[0288] IK OUTPUT:
+       left_joint4:   -0.0800 rad
+       right_joint4:  -0.0860 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0800 rad
+       right_joint4:  -0.0860 rad
+
+[0289] IK OUTPUT:
+       left_joint4:   -0.0802 rad
+       right_joint4:  -0.0859 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0802 rad
+       right_joint4:  -0.0859 rad
+
+[0290] IK OUTPUT:
+       left_joint4:   -0.0803 rad
+       right_joint4:  -0.0859 rad
+[0291] IK OUTPUT:
+       left_joint4:   -0.0803 rad
+       right_joint4:  -0.0859 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0803 rad
+       right_joint4:  -0.0859 rad
+
+[0292] IK OUTPUT:
+       left_joint4:   -0.0803 rad
+       right_joint4:  -0.0859 rad
+[0293] IK OUTPUT:
+       left_joint4:   -0.0805 rad
+       right_joint4:  -0.0835 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0803 rad
+       right_joint4:  -0.0859 rad
+
+[0294] IK OUTPUT:
+       left_joint4:   -0.0798 rad
+       right_joint4:  -0.0859 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0798 rad
+       right_joint4:  -0.0859 rad
+
+[0295] IK OUTPUT:
+       left_joint4:   -0.0796 rad
+       right_joint4:  -0.0858 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0796 rad
+       right_joint4:  -0.0858 rad
+
+[0296] IK OUTPUT:
+       left_joint4:   -0.0795 rad
+       right_joint4:  -0.0836 rad
+[0297] IK OUTPUT:
+       left_joint4:   -0.0789 rad
+       right_joint4:  -0.0858 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0795 rad
+       right_joint4:  -0.0836 rad
+
+[0298] IK OUTPUT:
+       left_joint4:   -0.0786 rad
+       right_joint4:  -0.0858 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0789 rad
+       right_joint4:  -0.0858 rad
+
+[0299] IK OUTPUT:
+       left_joint4:   -0.0784 rad
+       right_joint4:  -0.0835 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0786 rad
+       right_joint4:  -0.0858 rad
+
+[0300] IK OUTPUT:
+       left_joint4:   -0.0779 rad
+       right_joint4:  -0.0836 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0779 rad
+       right_joint4:  -0.0836 rad
+
+[0301] IK OUTPUT:
+       left_joint4:   -0.0769 rad
+       right_joint4:  -0.0857 rad
+[0302] IK OUTPUT:
+       left_joint4:   -0.0768 rad
+       right_joint4:  -0.0835 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0769 rad
+       right_joint4:  -0.0857 rad
+
+[0303] IK OUTPUT:
+       left_joint4:   -0.0763 rad
+       right_joint4:  -0.0835 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0763 rad
+       right_joint4:  -0.0835 rad
+
+[0304] IK OUTPUT:
+       left_joint4:   -0.0755 rad
+       right_joint4:  -0.0856 rad
+[0305] IK OUTPUT:
+       left_joint4:   -0.0751 rad
+       right_joint4:  -0.0856 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0755 rad
+       right_joint4:  -0.0856 rad
+
+[0306] IK OUTPUT:
+       left_joint4:   -0.0749 rad
+       right_joint4:  -0.0835 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0751 rad
+       right_joint4:  -0.0856 rad
+
+[0307] IK OUTPUT:
+       left_joint4:   -0.0743 rad
+       right_joint4:  -0.0856 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0743 rad
+       right_joint4:  -0.0856 rad
+
+[0308] IK OUTPUT:
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0835 rad
+[0309] IK OUTPUT:
+       left_joint4:   -0.0737 rad
+       right_joint4:  -0.0856 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0742 rad
+       right_joint4:  -0.0835 rad
+
+[0310] IK OUTPUT:
+       left_joint4:   -0.0734 rad
+       right_joint4:  -0.0857 rad
+[0311] IK OUTPUT:
+       left_joint4:   -0.0731 rad
+       right_joint4:  -0.0858 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0734 rad
+       right_joint4:  -0.0857 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0731 rad
+       right_joint4:  -0.0858 rad
+
+[0312] IK OUTPUT:
+       left_joint4:   -0.0728 rad
+       right_joint4:  -0.0859 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0728 rad
+       right_joint4:  -0.0859 rad
+
+[0313] IK OUTPUT:
+       left_joint4:   -0.0726 rad
+       right_joint4:  -0.0859 rad
+[0314] IK OUTPUT:
+       left_joint4:   -0.0720 rad
+       right_joint4:  -0.0860 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0720 rad
+       right_joint4:  -0.0860 rad
+
+[0315] IK OUTPUT:
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.0860 rad
+[0316] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0839 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0839 rad
+
+[0317] IK OUTPUT:
+       left_joint4:   -0.0714 rad
+       right_joint4:  -0.0861 rad
+[0318] IK OUTPUT:
+       left_joint4:   -0.0713 rad
+       right_joint4:  -0.0840 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0714 rad
+       right_joint4:  -0.0861 rad
+
+[0319] IK OUTPUT:
+       left_joint4:   -0.0711 rad
+       right_joint4:  -0.0861 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0713 rad
+       right_joint4:  -0.0840 rad
+
+[0320] IK OUTPUT:
+       left_joint4:   -0.0708 rad
+       right_joint4:  -0.0862 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0708 rad
+       right_joint4:  -0.0862 rad
+
+[0321] IK OUTPUT:
+       left_joint4:   -0.0707 rad
+       right_joint4:  -0.0862 rad
+[0322] IK OUTPUT:
+       left_joint4:   -0.0708 rad
+       right_joint4:  -0.0842 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0708 rad
+       right_joint4:  -0.0842 rad
+
+[0323] IK OUTPUT:
+       left_joint4:   -0.0707 rad
+       right_joint4:  -0.0842 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0707 rad
+       right_joint4:  -0.0842 rad
+
+[0324] IK OUTPUT:
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0843 rad
+[0325] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0863 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0863 rad
+
+[0326] IK OUTPUT:
+       left_joint4:   -0.0704 rad
+       right_joint4:  -0.0844 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0704 rad
+       right_joint4:  -0.0844 rad
+
+[0327] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0864 rad
+[0328] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0845 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0845 rad
+
+[0329] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0845 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0845 rad
+
+[0330] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0865 rad
+[0331] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0866 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0866 rad
+
+[0332] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0846 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0846 rad
+
+[0333] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0866 rad
+[0334] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0866 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0866 rad
+
+[0335] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0846 rad
+[0336] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0864 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0846 rad
+
+[0337] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0845 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0864 rad
+
+[0338] IK OUTPUT:
+       left_joint4:   -0.0704 rad
+       right_joint4:  -0.0855 rad
+[0339] IK OUTPUT:
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0854 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0704 rad
+       right_joint4:  -0.0855 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0854 rad
+
+[0340] IK OUTPUT:
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0831 rad
+[0341] IK OUTPUT:
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0844 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0844 rad
+
+[0342] IK OUTPUT:
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0841 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0841 rad
+
+[0343] IK OUTPUT:
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0839 rad
+[0344] IK OUTPUT:
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0837 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0837 rad
+
+[0345] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0817 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0817 rad
+
+[0346] IK OUTPUT:
+       left_joint4:   -0.0704 rad
+       right_joint4:  -0.0832 rad
+[0347] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0813 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0813 rad
+
+[0348] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0827 rad
+[0349] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0809 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0809 rad
+
+[0350] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0824 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0824 rad
+
+[0351] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0822 rad
+[0352] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0821 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0822 rad
+
+[0353] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0820 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0820 rad
+
+[0354] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0817 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0817 rad
+
+[0355] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0816 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0816 rad
+
+[0356] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0814 rad
+[0357] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0813 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0814 rad
+
+[0358] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0811 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0811 rad
+
+[0359] IK OUTPUT:
+       left_joint4:   -0.0695 rad
+       right_joint4:  -0.0794 rad
+[0360] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0809 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0809 rad
+
+[0361] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0808 rad
+[0362] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0807 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0808 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0807 rad
+
+[0363] IK OUTPUT:
+       left_joint4:   -0.0694 rad
+       right_joint4:  -0.0791 rad
+[0364] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0805 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0805 rad
+
+[0365] IK OUTPUT:
+       left_joint4:   -0.0694 rad
+       right_joint4:  -0.0790 rad
+[0366] IK OUTPUT:
+       left_joint4:   -0.0694 rad
+       right_joint4:  -0.0790 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0694 rad
+       right_joint4:  -0.0790 rad
+
+[0367] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0804 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0804 rad
+
+[0368] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0804 rad
+[0369] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0804 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0804 rad
+
+[0370] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0803 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0803 rad
+
+[0371] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0803 rad
+[0372] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0804 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0804 rad
+
+[0373] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0789 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0789 rad
+
+[0374] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0804 rad
+[0375] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0803 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0803 rad
+
+[0376] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0789 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0789 rad
+
+[0377] IK OUTPUT:
+       left_joint4:   -0.0704 rad
+       right_joint4:  -0.0789 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0704 rad
+       right_joint4:  -0.0789 rad
+
+[0378] IK OUTPUT:
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0789 rad
+[0379] IK OUTPUT:
+       left_joint4:   -0.0709 rad
+       right_joint4:  -0.0802 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0709 rad
+       right_joint4:  -0.0802 rad
+
+[0380] IK OUTPUT:
+       left_joint4:   -0.0708 rad
+       right_joint4:  -0.0788 rad
+[0381] IK OUTPUT:
+       left_joint4:   -0.0709 rad
+       right_joint4:  -0.0801 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0709 rad
+       right_joint4:  -0.0801 rad
+
+[0382] IK OUTPUT:
+       left_joint4:   -0.0709 rad
+       right_joint4:  -0.0801 rad
+[0383] IK OUTPUT:
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0788 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0709 rad
+       right_joint4:  -0.0801 rad
+
+[0384] IK OUTPUT:
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0788 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0788 rad
+
+[0385] IK OUTPUT:
+       left_joint4:   -0.0704 rad
+       right_joint4:  -0.0788 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0704 rad
+       right_joint4:  -0.0788 rad
+
+[0386] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0788 rad
+[0387] IK OUTPUT:
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0799 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0799 rad
+
+[0388] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0786 rad
+[0389] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0797 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0786 rad
+
+[0390] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0795 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0795 rad
+
+[0391] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0781 rad
+[0392] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0779 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0781 rad
+
+[0393] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0788 rad
+[0394] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0774 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0788 rad
+
+[0395] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0783 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0783 rad
+
+[0396] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0780 rad
+[0397] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0765 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0780 rad
+
+[0398] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0762 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0762 rad
+
+[0399] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0772 rad
+[0400] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0769 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0772 rad
+
+[0401] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0767 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0767 rad
+
+[0402] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0765 rad
+[0403] IK OUTPUT:
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0751 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0751 rad
+
+[0404] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0760 rad
+[0405] IK OUTPUT:
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0748 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0748 rad
+
+[0406] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0758 rad
+[0407] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0757 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0758 rad
+
+[0408] IK OUTPUT:
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0746 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0746 rad
+
+[0409] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0757 rad
+[0410] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0756 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0757 rad
+
+[0411] IK OUTPUT:
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0743 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0743 rad
+
+[0412] IK OUTPUT:
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0742 rad
+[0413] IK OUTPUT:
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0742 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0742 rad
+
+[0414] IK OUTPUT:
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0741 rad
+[0415] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0750 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0741 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0750 rad
+
+[0416] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0749 rad
+[0417] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0748 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0748 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0748 rad
+
+[0418] IK OUTPUT:
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0736 rad
+[0419] IK OUTPUT:
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0735 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0735 rad
+
+[0420] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0744 rad
+[0421] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0744 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0744 rad
+
+[0422] IK OUTPUT:
+       left_joint4:   -0.0695 rad
+       right_joint4:  -0.0733 rad
+[0423] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0743 rad
+[0424] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0744 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0743 rad
+
+[0425] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0745 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0745 rad
+
+[0426] IK OUTPUT:
+       left_joint4:   -0.0695 rad
+       right_joint4:  -0.0738 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0695 rad
+       right_joint4:  -0.0738 rad
+
+[0427] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0750 rad
+[0428] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0754 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0750 rad
+
+[0429] IK OUTPUT:
+       left_joint4:   -0.0695 rad
+       right_joint4:  -0.0750 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0695 rad
+       right_joint4:  -0.0750 rad
+
+[0430] IK OUTPUT:
+       left_joint4:   -0.0695 rad
+       right_joint4:  -0.0755 rad
+[0431] IK OUTPUT:
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0762 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0695 rad
+       right_joint4:  -0.0755 rad
+
+[0432] IK OUTPUT:
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0769 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0769 rad
+
+[0433] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0783 rad
+[0434] IK OUTPUT:
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0781 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0696 rad
+       right_joint4:  -0.0781 rad
+
+[0435] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0793 rad
+[0436] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0796 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0793 rad
+
+[0437] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0791 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0791 rad
+
+[0438] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0800 rad
+[0439] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0794 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0794 rad
+
+[0440] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0794 rad
+[0441] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0798 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0798 rad
+
+[0442] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0797 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0797 rad
+
+[0443] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0795 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0795 rad
+
+[0444] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0792 rad
+[0445] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0781 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0792 rad
+
+[0446] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0779 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0779 rad
+
+[0447] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0767 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0767 rad
+
+[0448] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0767 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0767 rad
+
+[0449] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0754 rad
+[0450] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0745 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0745 rad
+
+[0451] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0738 rad
+[0452] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0732 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0732 rad
+
+[0453] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0719 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0719 rad
+
+[0454] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0714 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0714 rad
+
+[0455] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0711 rad
+[0456] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0710 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0710 rad
+
+[0457] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0707 rad
+[0458] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0699 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0707 rad
+
+[0459] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0697 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0697 rad
+
+[0460] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0695 rad
+[0461] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0695 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0695 rad
+
+[0462] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0694 rad
+[0463] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0693 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0693 rad
+
+[0464] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0693 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0693 rad
+
+[0465] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0693 rad
+[0466] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0692 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0692 rad
+
+[0467] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0692 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0692 rad
+
+[0468] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0695 rad
+[0469] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0695 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0695 rad
+
+[0470] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0692 rad
+[0471] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0695 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0695 rad
+
+[0472] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0695 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0695 rad
+
+[0473] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0692 rad
+[0474] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0695 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0695 rad
+
+[0475] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0695 rad
+[0476] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0692 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0695 rad
+
+[0477] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0696 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0696 rad
+
+[0478] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0696 rad
+[0479] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0692 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0692 rad
+
+[0480] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0697 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0697 rad
+
+[0481] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0694 rad
+[0482] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0699 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0694 rad
+
+[0483] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0699 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0699 rad
+
+[0484] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0696 rad
+[0485] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0703 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0703 rad
+
+[0486] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0700 rad
+[0487] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0701 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0700 rad
+
+[0488] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0705 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0705 rad
+
+[0489] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0702 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0702 rad
+
+[0490] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0703 rad
+[0491] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0704 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0703 rad
+
+[0492] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0704 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0704 rad
+
+[0493] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0709 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0709 rad
+
+[0494] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0709 rad
+[0495] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0705 rad
+[0496] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0710 rad
+[0497] IK OUTPUT:
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0710 rad
+[0498] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0711 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0698 rad
+       right_joint4:  -0.0710 rad
+
+[0499] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0707 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0707 rad
+
+[0500] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0709 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0709 rad
+
+[0501] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0710 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0710 rad
+
+[0502] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0711 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0711 rad
+
+[0503] IK OUTPUT:
+       left_joint4:   -0.0694 rad
+       right_joint4:  -0.0719 rad
+[0504] IK OUTPUT:
+       left_joint4:   -0.0694 rad
+       right_joint4:  -0.0721 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0694 rad
+       right_joint4:  -0.0719 rad
+
+[0505] IK OUTPUT:
+       left_joint4:   -0.0694 rad
+       right_joint4:  -0.0724 rad
+[0506] IK OUTPUT:
+       left_joint4:   -0.0693 rad
+       right_joint4:  -0.0728 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0694 rad
+       right_joint4:  -0.0724 rad
+
+[0507] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0719 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0693 rad
+       right_joint4:  -0.0728 rad
+
+[0508] IK OUTPUT:
+       left_joint4:   -0.0693 rad
+       right_joint4:  -0.0732 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0693 rad
+       right_joint4:  -0.0732 rad
+
+[0509] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0725 rad
+[0510] IK OUTPUT:
+       left_joint4:   -0.0693 rad
+       right_joint4:  -0.0737 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0725 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0693 rad
+       right_joint4:  -0.0737 rad
+
+[0511] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0732 rad
+[0512] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0737 rad
+[0513] IK OUTPUT:
+       left_joint4:   -0.0694 rad
+       right_joint4:  -0.0750 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0694 rad
+       right_joint4:  -0.0750 rad
+
+[0514] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0745 rad
+[0515] IK OUTPUT:
+       left_joint4:   -0.0695 rad
+       right_joint4:  -0.0758 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0695 rad
+       right_joint4:  -0.0758 rad
+
+[0516] IK OUTPUT:
+       left_joint4:   -0.0695 rad
+       right_joint4:  -0.0764 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0695 rad
+       right_joint4:  -0.0764 rad
+
+[0517] IK OUTPUT:
+       left_joint4:   -0.0695 rad
+       right_joint4:  -0.0771 rad
+[0518] IK OUTPUT:
+       left_joint4:   -0.0695 rad
+       right_joint4:  -0.0778 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0695 rad
+       right_joint4:  -0.0771 rad
+
+[0519] IK OUTPUT:
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0776 rad
+[0520] IK OUTPUT:
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0794 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0697 rad
+       right_joint4:  -0.0794 rad
+
+[0521] IK OUTPUT:
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0792 rad
+[0522] IK OUTPUT:
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0799 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0792 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0799 rad
+
+[0523] IK OUTPUT:
+       left_joint4:   -0.0707 rad
+       right_joint4:  -0.0808 rad
+[0524] IK OUTPUT:
+       left_joint4:   -0.0707 rad
+       right_joint4:  -0.0815 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0707 rad
+       right_joint4:  -0.0815 rad
+
+[0525] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0830 rad
+[0526] IK OUTPUT:
+       left_joint4:   -0.0709 rad
+       right_joint4:  -0.0831 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0830 rad
+
+[0527] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0843 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0843 rad
+
+[0528] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0847 rad
+[0529] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0854 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0854 rad
+
+[0530] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0860 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0860 rad
+
+[0531] IK OUTPUT:
+       left_joint4:   -0.0710 rad
+       right_joint4:  -0.0859 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0710 rad
+       right_joint4:  -0.0859 rad
+
+[0532] IK OUTPUT:
+       left_joint4:   -0.0710 rad
+       right_joint4:  -0.0862 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0710 rad
+       right_joint4:  -0.0862 rad
+
+[0533] IK OUTPUT:
+       left_joint4:   -0.0710 rad
+       right_joint4:  -0.0867 rad
+[0534] IK OUTPUT:
+       left_joint4:   -0.0711 rad
+       right_joint4:  -0.0873 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0710 rad
+       right_joint4:  -0.0867 rad
+
+[0535] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0885 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0885 rad
+
+[0536] IK OUTPUT:
+       left_joint4:   -0.0711 rad
+       right_joint4:  -0.0884 rad
+[0537] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0894 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0711 rad
+       right_joint4:  -0.0884 rad
+
+[0538] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0898 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0898 rad
+
+[0539] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0901 rad
+[0540] IK OUTPUT:
+       left_joint4:   -0.0712 rad
+       right_joint4:  -0.0901 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0712 rad
+       right_joint4:  -0.0901 rad
+
+[0541] IK OUTPUT:
+       left_joint4:   -0.0704 rad
+       right_joint4:  -0.0911 rad
+[0542] IK OUTPUT:
+       left_joint4:   -0.0713 rad
+       right_joint4:  -0.0906 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0704 rad
+       right_joint4:  -0.0911 rad
+
+[0543] IK OUTPUT:
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0915 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0915 rad
+
+[0544] IK OUTPUT:
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0917 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0917 rad
+
+[0545] IK OUTPUT:
+       left_joint4:   -0.0714 rad
+       right_joint4:  -0.0914 rad
+[0546] IK OUTPUT:
+       left_joint4:   -0.0715 rad
+       right_joint4:  -0.0917 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0714 rad
+       right_joint4:  -0.0914 rad
+
+[0547] IK OUTPUT:
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0924 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0924 rad
+
+[0548] IK OUTPUT:
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.0920 rad
+[0549] IK OUTPUT:
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0927 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.0920 rad
+
+[0550] IK OUTPUT:
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0928 rad
+[0551] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0921 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0928 rad
+
+[0552] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0922 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0922 rad
+
+[0553] IK OUTPUT:
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0923 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0923 rad
+
+[0554] IK OUTPUT:
+       left_joint4:   -0.0717 rad
+       right_joint4:  -0.0917 rad
+[0555] IK OUTPUT:
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0923 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0923 rad
+
+[0556] IK OUTPUT:
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0922 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0922 rad
+
+[0557] IK OUTPUT:
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.0914 rad
+[0558] IK OUTPUT:
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.0914 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0718 rad
+       right_joint4:  -0.0914 rad
+
+[0559] IK OUTPUT:
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.0914 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0716 rad
+       right_joint4:  -0.0914 rad
+
+[0560] IK OUTPUT:
+       left_joint4:   -0.0707 rad
+       right_joint4:  -0.0914 rad
+[0561] IK OUTPUT:
+       left_joint4:   -0.0715 rad
+       right_joint4:  -0.0913 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0707 rad
+       right_joint4:  -0.0914 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0715 rad
+       right_joint4:  -0.0913 rad
+
+[0562] IK OUTPUT:
+       left_joint4:   -0.0707 rad
+       right_joint4:  -0.0928 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0707 rad
+       right_joint4:  -0.0928 rad
+
+[0563] IK OUTPUT:
+       left_joint4:   -0.0707 rad
+       right_joint4:  -0.0931 rad
+[0564] IK OUTPUT:
+       left_joint4:   -0.0714 rad
+       right_joint4:  -0.0915 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0707 rad
+       right_joint4:  -0.0931 rad
+
+[0565] IK OUTPUT:
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0931 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0931 rad
+
+[0566] IK OUTPUT:
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0948 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0948 rad
+
+[0567] IK OUTPUT:
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0956 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0956 rad
+
+[0568] IK OUTPUT:
+       left_joint4:   -0.0704 rad
+       right_joint4:  -0.0958 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0704 rad
+       right_joint4:  -0.0958 rad
+
+[0569] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0968 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0968 rad
+
+[0570] IK OUTPUT:
+       left_joint4:   -0.0710 rad
+       right_joint4:  -0.0935 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0710 rad
+       right_joint4:  -0.0935 rad
+
+       Isaac Sim (feedback):
+       left_joint4:   -0.0710 rad
+       right_joint4:  -0.0935 rad
+
+[0571] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0957 rad
+[0572] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0947 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0957 rad
+
+[0573] IK OUTPUT:
+       left_joint4:   -0.0710 rad
+       right_joint4:  -0.0893 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0710 rad
+       right_joint4:  -0.0893 rad
+
+[0574] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0928 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0928 rad
+
+[0575] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0923 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0923 rad
+
+[0576] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0913 rad
+[0577] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0907 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0913 rad
+
+[0578] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0902 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0902 rad
+
+[0579] IK OUTPUT:
+       left_joint4:   -0.0709 rad
+       right_joint4:  -0.0846 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0709 rad
+       right_joint4:  -0.0846 rad
+
+[0580] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0892 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0892 rad
+
+[0581] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0883 rad
+[0582] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0887 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0887 rad
+
+[0583] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0888 rad
+[0584] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0889 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0888 rad
+
+[0585] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0894 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0894 rad
+
+[0586] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0899 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0899 rad
+
+[0587] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0901 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0901 rad
+
+[0588] IK OUTPUT:
+       left_joint4:   -0.0708 rad
+       right_joint4:  -0.0826 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0708 rad
+       right_joint4:  -0.0826 rad
+
+[0589] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0912 rad
+[0590] IK OUTPUT:
+       left_joint4:   -0.0707 rad
+       right_joint4:  -0.0833 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0707 rad
+       right_joint4:  -0.0833 rad
+
+[0591] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0917 rad
+[0592] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0920 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0917 rad
+
+[0593] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0925 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0925 rad
+
+[0594] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0930 rad
+[0595] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0934 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0930 rad
+
+[0596] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0938 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0938 rad
+
+[0597] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0939 rad
+[0598] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0937 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0939 rad
+
+[0599] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0935 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0937 rad
+
+[0600] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0934 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0934 rad
+
+[0601] IK OUTPUT:
+       left_joint4:   -0.0708 rad
+       right_joint4:  -0.0830 rad
+[0602] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0933 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0933 rad
+
+[0603] IK OUTPUT:
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0930 rad
+[0604] IK OUTPUT:
+       left_joint4:   -0.0708 rad
+       right_joint4:  -0.0822 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0699 rad
+       right_joint4:  -0.0930 rad
+
+[0605] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0919 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0919 rad
+
+[0606] IK OUTPUT:
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0918 rad
+[0607] IK OUTPUT:
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0918 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0700 rad
+       right_joint4:  -0.0918 rad
+
+[0608] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0918 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0701 rad
+       right_joint4:  -0.0918 rad
+
+[0609] IK OUTPUT:
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0919 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0702 rad
+       right_joint4:  -0.0919 rad
+
+[0610] IK OUTPUT:
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0918 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0703 rad
+       right_joint4:  -0.0918 rad
+
+[0611] IK OUTPUT:
+       left_joint4:   -0.0704 rad
+       right_joint4:  -0.0916 rad
+[0612] IK OUTPUT:
+       left_joint4:   -0.0704 rad
+       right_joint4:  -0.0914 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0704 rad
+       right_joint4:  -0.0914 rad
+
+[0613] IK OUTPUT:
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0911 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0705 rad
+       right_joint4:  -0.0911 rad
+
+[0614] IK OUTPUT:
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0908 rad
+[0615] IK OUTPUT:
+       left_joint4:   -0.0707 rad
+       right_joint4:  -0.0905 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0706 rad
+       right_joint4:  -0.0908 rad
+
+[0616] IK OUTPUT:
+       left_joint4:   -0.0715 rad
+       right_joint4:  -0.0843 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0715 rad
+       right_joint4:  -0.0843 rad
+
+[0617] IK OUTPUT:
+       left_joint4:   -0.0707 rad
+       right_joint4:  -0.0906 rad
+[0618] IK OUTPUT:
+       left_joint4:   -0.0715 rad
+       right_joint4:  -0.0847 rad
+       Isaac Sim (feedback):
+       left_joint4:   -0.0715 rad
+       right_joint4:  -0.0847 rad

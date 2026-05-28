@@ -1,0 +1,63 @@
+source /opt/ros/jazzy/setup.bash
+source /home/air-lab-ncsu/OPEN_ARM/packages/install/setup.bash
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+
+ros2 launch openarm_bringup openarm.bimanual.launch.py \
+    right_can_interface:=can0 \
+    left_can_interface:=can1
+
+
+Good plan. Once hardware is up, first read the current joint positions so we send a safe "hold" command (no sudden movement):
+
+Step 1 — After hardware bringup, read where the robot actually is:
+
+
+source /opt/ros/jazzy/setup.bash
+source /home/air-lab-ncsu/OPEN_ARM/packages/install/setup.bash
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+ros2 topic echo /joint_states --once
+Step 2 — Then publish those exact positions back through the relay:
+
+
+ros2 topic pub --once /joint_trajectory trajectory_msgs/msg/JointTrajectory "{
+  joint_names: [
+    openarm_left_joint1, openarm_left_joint2, openarm_left_joint3,
+    openarm_left_joint4, openarm_left_joint5, openarm_left_joint6, openarm_left_joint7,
+    openarm_right_joint1, openarm_right_joint2, openarm_right_joint3,
+    openarm_right_joint4, openarm_right_joint5, openarm_right_joint6, openarm_right_joint7,
+    openarm_left_finger_joint1, openarm_right_finger_joint1
+  ],
+  points: [{
+    positions: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.132, 0.132],
+    time_from_start: {sec: 2, nanosec: 0}
+  }]
+}"
+
+
+
+The CAN adapters are detected by USB (two Geschwister Schneider CAN adapters, also known as candleLight or gs_usb). These use the gs_usb kernel module. The devices exist as USB but aren't brought up as CAN network interfaces yet.
+
+The gs_usb module needs to be loaded, and then the interfaces should appear as can0 and can1.
+
+Let me check if the module is loaded:
+
+
+lsmod | grep gs_usb
+And then load it if needed:
+
+
+sudo modprobe gs_usb
+After that, can0 and can1 should appear.
+
+The adapters are there — two Geschwister Schneider / candleLight USB-CAN adapters (gs_usb driver). The kernel module just isn't loaded yet.
+
+
+sudo modprobe gs_usb
+ip link show | grep can
+That should make can0 and can1 appear. Then bring them up:
+
+
+sudo ip link set can0 up type can bitrate 1000000 dbitrate 5000000 fd on
+sudo ip link set can1 up type can bitrate 1000000 dbitrate 5000000 fd on
+Then re-run the hardware launch.
+

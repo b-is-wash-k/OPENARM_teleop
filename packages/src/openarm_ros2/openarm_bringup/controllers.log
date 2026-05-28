@@ -1,0 +1,5 @@
+right_gripper_controller          position_controllers/GripperActionController           active
+left_gripper_controller           position_controllers/GripperActionController           active
+right_joint_trajectory_controller joint_trajectory_controller/JointTrajectoryController  active
+left_joint_trajectory_controller  joint_trajectory_controller/JointTrajectoryController  active
+joint_state_broadcaster           joint_state_broadcaster/JointStateBroadcaster          active

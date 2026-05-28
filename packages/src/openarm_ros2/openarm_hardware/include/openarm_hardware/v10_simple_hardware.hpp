@@ -1,0 +1,164 @@
+// Copyright 2025 Enactic, Inc.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+#pragma once
+
+#include <chrono>
+#include <memory>
+#include <openarm/can/socket/openarm.hpp>
+#include <openarm/damiao_motor/dm_motor_constants.hpp>
+#include <string>
+#include <vector>
+
+#include "hardware_interface/handle.hpp"
+#include "hardware_interface/hardware_info.hpp"
+#include "hardware_interface/system_interface.hpp"
+#include "hardware_interface/types/hardware_interface_return_values.hpp"
+#include "openarm_hardware/visibility_control.h"
+#include "rcl_interfaces/msg/set_parameters_result.hpp"
+#include "rclcpp/macros.hpp"
+#include "rclcpp/node.hpp"
+#include "rclcpp_lifecycle/state.hpp"
+
+namespace openarm_hardware {
+
+/**
+ * @brief Simplified OpenArm V10 Hardware Interface
+ *
+ * This is a simplified version that uses the OpenArm CAN API directly,
+ * following the pattern from full_arm.cpp example. Much simpler than
+ * the original implementation.
+ */
+class OpenArm_v10HW : public hardware_interface::SystemInterface {
+ public:
+  OpenArm_v10HW();
+
+  TEMPLATES__ROS2_CONTROL__VISIBILITY_PUBLIC
+  hardware_interface::CallbackReturn on_init(
+      const hardware_interface::HardwareInfo& info) override;
+
+  TEMPLATES__ROS2_CONTROL__VISIBILITY_PUBLIC
+  hardware_interface::CallbackReturn on_configure(
+      const rclcpp_lifecycle::State& previous_state) override;
+
+  TEMPLATES__ROS2_CONTROL__VISIBILITY_PUBLIC
+  std::vector<hardware_interface::StateInterface> export_state_interfaces()
+      override;
+
+  TEMPLATES__ROS2_CONTROL__VISIBILITY_PUBLIC
+  std::vector<hardware_interface::CommandInterface> export_command_interfaces()
+      override;
+
+  TEMPLATES__ROS2_CONTROL__VISIBILITY_PUBLIC
+  hardware_interface::CallbackReturn on_activate(
+      const rclcpp_lifecycle::State& previous_state) override;
+
+  TEMPLATES__ROS2_CONTROL__VISIBILITY_PUBLIC
+  hardware_interface::CallbackReturn on_deactivate(
+      const rclcpp_lifecycle::State& previous_state) override;
+
+  TEMPLATES__ROS2_CONTROL__VISIBILITY_PUBLIC
+  hardware_interface::return_type read(const rclcpp::Time& time,
+                                       const rclcpp::Duration& period) override;
+
+  TEMPLATES__ROS2_CONTROL__VISIBILITY_PUBLIC
+  hardware_interface::return_type write(
+      const rclcpp::Time& time, const rclcpp::Duration& period) override;
+
+ private:
+  // V10 default configuration
+  static constexpr size_t ARM_DOF = 7;
+  static constexpr bool ENABLE_GRIPPER = true;
+
+  // Default motor configuration for V10
+  const std::vector<openarm::damiao_motor::MotorType> DEFAULT_MOTOR_TYPES = {
+      openarm::damiao_motor::MotorType::DM8009,  // Joint 1
+      openarm::damiao_motor::MotorType::DM8009,  // Joint 2
+      openarm::damiao_motor::MotorType::DM4340,  // Joint 3
+      openarm::damiao_motor::MotorType::DM4340,  // Joint 4
+      openarm::damiao_motor::MotorType::DM4310,  // Joint 5
+      openarm::damiao_motor::MotorType::DM4310,  // Joint 6
+      openarm::damiao_motor::MotorType::DM4310   // Joint 7
+  };
+
+  const std::vector<uint32_t> DEFAULT_SEND_CAN_IDS = {0x01, 0x02, 0x03, 0x04,
+                                                      0x05, 0x06, 0x07};
+  const std::vector<uint32_t> DEFAULT_RECV_CAN_IDS = {0x11, 0x12, 0x13, 0x14,
+                                                      0x15, 0x16, 0x17};
+
+  const openarm::damiao_motor::MotorType DEFAULT_GRIPPER_MOTOR_TYPE =
+      openarm::damiao_motor::MotorType::DM4310;
+  const uint32_t DEFAULT_GRIPPER_SEND_CAN_ID = 0x08;
+  const uint32_t DEFAULT_GRIPPER_RECV_CAN_ID = 0x18;
+
+  // Gains
+  // Joints 1-2 bumped 70→90 (Kp) and Kd raised by ~sqrt(90/70) ≈ 1.13× to
+  // keep damping ratio roughly constant. Kills the spring-back on grip
+  // release felt during VR teleop. Tuning ladder:
+  //   still too soft     → Kp1=Kp2=110, Kd1=3.4, Kd2=3.1
+  //   starts vibrating   → Kp1=Kp2=80,  Kd1=3.0, Kd2=2.7
+  // Joints 5-7 (wrist) intentionally soft (DM4310 small motors).
+  //
+  // std::vector<double> kp_ = {70.0, 70.0, 60.0, 60.0, 10.0, 10.0, 10.0};
+  // std::vector<double> kd_ = {2.75, 2.5, 2.0, 2.0, 0.7, 0.6, 0.5};
+  
+  std::vector<double> kp_ = {90.0, 90.0, 70.0, 60.0, 10.0, 10.0, 10.0};
+  std::vector<double> kd_ = {3.1, 2.8, 2.0, 2.0, 0.7, 0.6, 0.5};
+
+  const double GRIPPER_JOINT_0_POSITION = 0.044;
+  const double GRIPPER_JOINT_1_POSITION = 0.0;
+  const double GRIPPER_MOTOR_0_RADIANS = 0.0;
+  const double GRIPPER_MOTOR_1_RADIANS = -1.0472;
+//   const double GRIPPER_KP = 5.0;
+//   const double GRIPPER_KD = 0.1;
+
+  double gripper_kp_ = 1.0;
+  double gripper_kd_ = 0.1;
+
+
+  // Configuration
+  std::string can_interface_;
+  std::string arm_prefix_;
+  bool hand_;
+  bool can_fd_;
+
+  // OpenArm instance
+  std::unique_ptr<openarm::can::socket::OpenArm> openarm_;
+
+  // Generated joint names for this arm instance
+  std::vector<std::string> joint_names_;
+
+  // ROS2 control state and command vectors
+  std::vector<double> pos_commands_;
+  std::vector<double> vel_commands_;
+  std::vector<double> tau_commands_;
+  std::vector<double> pos_states_;
+  std::vector<double> vel_states_;
+  std::vector<double> tau_states_;
+
+  // ROS2 parameter callback handle — keeps the callback alive for the lifetime of this object
+  rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr param_callback_handle_;
+
+  // Helper methods
+  void return_to_zero();
+  bool parse_config(const hardware_interface::HardwareInfo& info);
+  void generate_joint_names();
+  void register_param_callback();
+
+  // Gripper mapping functions
+  double joint_to_motor_radians(double joint_value);
+  double motor_radians_to_joint(double motor_radians);
+};
+
+}  // namespace openarm_hardware

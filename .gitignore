@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# ROS / colcon build outputs
+build/
+install/
+log/
+logs/
+
+# Large/generated files
+*.bag
+*.db3
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.zip
+*.tar.gz
+*.pt
+*.pth
+*.onnx
+*.npy
+*.npz
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Secrets
+.env
+*.env
+credentials*
+token*
+secret*
+*.pem
+*.key
+
+# Claude local project data
+.claude/
